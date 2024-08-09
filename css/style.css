@@ -1239,6 +1239,7 @@ footer{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     grid-template-rows: repeat(4,1fr);
+    column-gap: 20px;
 }
 
 .contact-form .nombre{
@@ -1297,8 +1298,15 @@ footer{
     font-size: 1.5rem;
 }
 
+#GoogleMapsIframe{
+    width: 100%;
+    height: 760px;
+    max-width: 1284px;
+}
+
 .ubicacion-mapa{
     text-align: center;
+    max-width: 1920px;
 }
 
                                                 /**CONTACTO-INFO**/
@@ -1474,6 +1482,72 @@ footer{
 
                                                 /**RESPONSIVE-MEDIAQUERY**/
                                                     /****/
+@media(max-width: 1440px){
+    .info-contacto h3{
+        font-size: 2rem;
+        margin: 3rem 0 3rem 3rem;
+        padding: 0;
+    }
+    .mail,.phone,.ubi{
+        font-size: 1rem;
+    }
+    .texto-contacto{
+        font-size: 1.5rem;
+        margin: 3rem 0 3rem 3rem;
+    }
+}
+
+@media(max-width:1024px){
+    .menu li a{
+        font-size: 1rem;
+    }
+    .navbar a{
+        font-size: 1rem;
+    }
+    .contact-form label{
+        font-size: 1.5rem;
+    }
+    .contact-form textarea{
+        font-size: 1.3rem;
+    }
+    #GoogleMapsIframe{
+        width: 100%;
+        max-width: 1024px;
+        height: 380px ;
+    }
+    .ubicacion-mapa iframe{
+        max-width: 1024px;
+        margin: 0;
+    }
+    footer{
+        grid-template-rows: repeat(6,1fr);
+    }
+    .logoFooter{
+        grid-column: 1/4 ;
+        grid-row: 1/2 ;
+        justify-self: center;
+        align-self: center;
+    }
+    .partner{
+        grid-column: 1/4 ;
+        grid-row: 2/3;
+    }
+    .redes-footer{
+        grid-column: 1/4 ;
+        grid-row: 3/4 ;
+    }
+    .menu-footer{
+        grid-column: 1/4 ;
+        grid-row: 4/7 ;
+    }
+    .copyright{
+        grid-column: 1/4;
+        grid-row: 6/7;
+    }
+    .contact-form{
+        column-gap: 30px;
+    }
+}
 
 @media(max-width: 768px){
     .navbar-nav{
@@ -1503,5 +1577,60 @@ footer{
     .about-text{
         padding-top: 50px;
     }
-    
+    .info-contacto h3{
+        font-size: 1.5rem;
+    }
+    .texto-contacto{
+        font-size: 1.3rem;
+    }
+    .empresa-contacto{
+    grid-column: 2/3;
+    }
+    .Titulo h1{
+        font-size: 3rem;
+    }
+    .Titulo p{
+        font-size: 1rem;
+    }
+    .Contacto-box h2{
+        font-size: 2rem;
+        font-weight: normal;
+    }
+    .contacto1 h3{
+        font-size: 2rem;
+    }
+    .contact-form{
+        grid-template-rows: repeat(5,1fr);
+    }
+    .contact-form .nombre{
+        grid-column: 1/3;
+        grid-row: 1/2;
+    }
+    .contact-form .email{
+        grid-column: 1/3;
+        grid-row: 2/3;
+    }
+    .contact-form .teléfono{
+        grid-column: 1/3;
+        grid-row: 3/4;
+    }
+    .contact-form .mensaje{
+        grid-column: 1/3;
+        grid-row: 4/5;
+    }
+    .contact-form .enviar{
+        grid-column: 1/3;
+        grid-row: 5/6;
+    }
+    .contact-form .enviar{
+        align-self: center;
+    }
+
+    .contact-form label{
+        font-size: 1.5rem;
+    }
+    .contact-form textarea{
+        font-size: 1rem;
+    }
 }
+@media(max-width: 320px)

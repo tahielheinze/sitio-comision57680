@@ -100,8 +100,6 @@ body {
     grid-column: 1/2;
     grid-row: 2/3;
     margin-top: 10px;
-    justify-content: start;
-    padding-right: 150px;
 }
 .TituloHome .LogoEmpresaHome{
     grid-column: 2/3;
@@ -186,9 +184,9 @@ body {
     justify-self: center;
     align-self: start;
     font-weight: normal;
-    font-size: 2.5rem;
-    padding-left: 8rem;
-    padding-right: 8rem;
+    font-size: 2rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
     margin:0rem;
 }
 
@@ -263,8 +261,8 @@ i{
     align-self: start;
     font-weight: normal;
     font-size: 2.5rem;
-    padding-left: 14rem;
-    padding-right: 14rem;
+    padding-left: 6rem;
+    padding-right: 6rem;
     margin: 0rem;
     color: white;
 }

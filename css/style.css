@@ -1563,7 +1563,28 @@ footer{
     }
     .LogoEnNavbar{
         font-size: 1.7rem;
-    }    
+    }
+    .Logo-Titulo img{
+        width: 180px;
+        height: 180px;
+    }
+    .service-box h2{
+        font-size: 3rem;
+    }
+    .Service-contenido{
+        margin: 3rem;
+    }
+    .servicios{
+        margin: 3rem;
+        column-gap: 5rem;
+    }
+    
+
+
+
+
+
+
 }
 
 @media(max-width:1219px){
@@ -1680,7 +1701,51 @@ footer{
         padding-left: 33%;
         padding-right: 33%;
     }
-
+    .Titulo h1{
+        font-size: 2.5rem;
+    }
+    .Titulo p{
+        font-size: 1.5rem;
+        margin: 0rem 0rem 0rem 3rem;
+    }
+    .service-box h2{
+        font-size: 2.5rem;
+    }
+    .service-box{
+        width: 550px;
+    }
+    .texto-service{
+        padding: 0rem;
+        font-size: 1.5rem;
+    }
+    .servicios{
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-columns: repeat(2,1fr);
+        column-gap: 0;
+    }
+    .servicio-redsocial,.servicio-consultoria,.servicio-rebranding, .servicio-seo{
+        grid-row: 1/2;
+        grid-column: 1/3;
+    }
+    .red-box, .consul-box, .rebran-box, .seo-box{
+        height: 300px;
+        align-content: center;
+    }
+    .red-box h2, .consul-box h2, .rebran-box h2, .seo-box h2{
+    font-size: 1.5rem;
+    }
+    .red-box p, .consul-box p, .rebran-box p, .seo-box p{
+        font-size: 1.5rem;
+    }
+    .servicio-consultoria{
+        grid-row: 2/3;
+    }
+    .servicio-rebranding{
+        grid-row: 3/4;
+    }
+    .servicio-seo{
+        grid-row: 4/5;
+    }
 }
 
 
@@ -1716,6 +1781,7 @@ footer{
     }
     .Logo-Titulo img{
         height: 150px;
+        width: 150px;
     }
     .Contacto-foto{
         height: 350px;
@@ -1782,7 +1848,6 @@ footer{
         align-self: center;
         text-align: center;
     }
-
     .contact-form label{
         font-size: 1.3rem;
     }
@@ -1801,6 +1866,10 @@ footer{
     }
     .mail,.phone,.ubi{
         font-size: .8rem;
+    }
+    .info-contacto{
+        height: 450px;
+        background-size: cover;
     }
     .info-contacto i{
         font-size: 1.2rem;
@@ -1848,6 +1917,26 @@ footer{
     }
     .LogosClientes{
         column-gap: 3rem;
+    }
+    .redsocial-img, .consultoria-img, .rebranding-img, .seo-img{
+        display: none;
+    }
+    .red-box, .consul-box, .rebran-box, .seo-box{
+        width: 100%;
+        height: 200px ;
+        align-content: start;
+    }
+    .red-box, .rebran-box{
+        border-right: 10px solid #00798B;
+        border-left: none;
+    }
+    .red-box h2, .consul-box h2, .rebran-box h2, .seo-box h2 {
+        font-size: 1.8rem;
+    }
+    .red-box p, .consul-box p, .rebran-box p, .seo-box p{
+        font-size: 1.3rem;
+        padding: 0rem 4rem;
+        text-align: justify;
     }
 }
 
@@ -1933,15 +2022,68 @@ footer{
     .LogosClientes{
         column-gap: 10rem;
     }
-}
-
-
-@media(max-width:540px){
-    body{
-        width: 540px;
+    .Titulo h1{
+        grid-column: 1/3;
+        grid-row: 1/2;
+        padding: 0;
+        font-size: 2rem;
+        margin: 0 3rem;
+        text-align: center;
     }
-}
-
-@media(max-width: 320px){
-    
+    .Titulo p{
+        grid-column: 1/3;
+        grid-row: 2/3;
+        justify-self: center;
+        margin: 0;
+        font-size: .9rem;
+        align-self: center;
+    }
+    .Logo-Titulo img{
+        display: none;
+    }
+    .Service-Foto{
+        height: 300px;
+    }
+    .service-box h2{
+        font-size: 2rem;
+    }
+    .red-box, .consul-box, .rebran-box, .seo-box{
+        height: 165px;
+    }
+    .red-box h2, .consul-box h2, .rebran-box h2, .seo-box h2{
+        font-size: 1.3rem;
+        margin: 1rem 0;
+        padding: 0 1rem;
+    }
+    .red-box p, .consul-box p, .rebran-box p, .seo-box p{
+        font-size: 1rem;
+        padding: 0rem 1rem;
+    }
+    .red-box, .consul-box, .rebran-box, .seo-box{
+        align-content: center;
+    }
+    .texto-service{
+        font-size: 1.2rem;
+    }
+    .navbar a{
+        font-size: 1.2rem;
+    }
+    .info-contacto h3{
+        grid-column: 1/4;
+        justify-self: center;
+        text-align: center;
+        margin: 0;
+    }
+    .texto-contacto{
+        margin: 0 2rem;
+    }
+    .mail, .phone, .ubi{
+        font-size: .5rem;
+    }
+    .empresa-contacto{
+        display: none;
+    }
+    .info-contacto{
+        grid-template-rows: repeat(3,1fr);
+    }
 }

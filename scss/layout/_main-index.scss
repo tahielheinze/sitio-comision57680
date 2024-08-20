@@ -1,0 +1,3 @@
+.ProyecotsBox{
+    @include box-contenedora1 (unquote("1/3"),unquote("1/2"), map-get($colores,'box-color1'), map-get($colores,'text-color1'), center, center)
+}

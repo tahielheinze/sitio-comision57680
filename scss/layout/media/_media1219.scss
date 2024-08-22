@@ -1,0 +1,41 @@
+@media(max-width:1219px){
+
+    .LogosClientes{
+        column-gap: 7rem;
+        row-gap: 7rem;
+    }
+    .LogosClientes img{
+        width: 150px;
+        height: 150px;
+    }    
+    footer{
+        grid-template-rows: repeat(6,1fr);
+        margin-top: 3rem;
+    }
+    .logoFooter{
+        grid-column: 1/4 ;
+        grid-row: 1/2 ;
+        justify-self: center;
+        align-self: center;
+    }
+    .logoFooter img{
+        height: 150px;
+    }
+    .partner{
+        grid-column: 1/4 ;
+        grid-row: 2/3;
+        align-self: center;
+    }
+    .redes-footer{
+        grid-column: 1/4 ;
+        grid-row: 3/4 ;
+    }
+    .menu-footer{
+        grid-column: 1/4 ;
+        grid-row: 4/7 ;
+    }
+    .copyright{
+        grid-column: 1/4;
+        grid-row: 6/7;
+    }
+}

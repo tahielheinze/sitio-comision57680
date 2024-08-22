@@ -1,27 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto - Ares Digital Marketing</title>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
 </head>
+
 <body>
-    <header>
-            <nav class="navbar">
-                <a href="#" class="LogoEnNavbar">Ares Digital Marketing</a>
-                <div class="navbar__div">
-                    <ul class="menu">
-                        <li><a href="../index.html" >Inicio</a></li>
-                        <li><a href="./nosotros.html" >Nosotros</a></li>
-                        <li><a href="./servicios.html" >Servicios</a></li>
-                        <li><a href="./portfolio.html" >Portfolio</a></li>
-                        <li><a href="#" >Contacto</a></li>
-                    </ul>
-                </div>
-            </nav>
+    <header class="header">
+        <nav class="navbar-menu">
+            <a class="logo" href="#">Ares Digital Marketing</a>
+
+            <label class="label_hamburguesa" for="menu_hamburguesa">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="list_icon"
+                    viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+                </svg>
+            </label>
+            <input class="menu_hamburguesa" type="checkbox" name="" id="menu_hamburguesa">
+            <ul class="ul_links">
+                <li class="li_links">
+                    <a class="link" href="../index.html">Inicio</a>
+                </li>
+                <li class="li_links">
+                    <a class="link" href="./Nosotros.html">Nosotros</a>
+                </li>
+                <li class="li_links">
+                    <a class="link" href="./Servicios.html">Servicios</a>
+                </li>
+                <li class="li_links">
+                    <a class="link" href="./Portfolio.html">Portfolio</a>
+                </li>
+                <li class="li_links">
+                    <a class="link" href="#">Contacto</a>
+                </li>
+            </ul>
+        </nav>
     </header>
     <main>
         <section class="Titulo">
@@ -38,7 +57,7 @@
             </div>
         </section>
 
-        <section  class="contacto1">
+        <section class="contacto1">
             <h3><strong>¿HABLAMOS?</strong> <br>Contanos sobre tu proyecto</h3>
             <hr class="LineaDivisoraContenidos">
         </section>
@@ -62,7 +81,8 @@
 
                 <p class="mensaje">
                     <label>Mensaje (opcional)</label>
-                    <textarea placeholder="Ingresa tu mensaje para que conozcamos más sobre tu proyecto*" name="Mensaje" rows="3"></textarea>
+                    <textarea placeholder="Ingresa tu mensaje para que conozcamos más sobre tu proyecto*" name="Mensaje"
+                        rows="3"></textarea>
                 </p>
 
                 <p class="enviar">
@@ -70,14 +90,18 @@
                 </p>
             </form>
             <div class="ubicacion-mapa">
-                <iframe id="GoogleMapsIframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.63740862377!2d-58.44939038800183!3d-34.56273487285639!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb5cec716ddf1%3A0xa07048e1ecdc6a4a!2sArribe%C3%B1os%201630%2C%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1723093473441!5m2!1ses!2sar" width="1284" height="760" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe id="GoogleMapsIframe"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.63740862377!2d-58.44939038800183!3d-34.56273487285639!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb5cec716ddf1%3A0xa07048e1ecdc6a4a!2sArribe%C3%B1os%201630%2C%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1723093473441!5m2!1ses!2sar"
+                    width="1284" height="760" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </section>
-            
+
         <section class="info-contacto">
             <h3>Súmate a nuestro equipo</h3>
             <hr>
-            <p class="texto-contacto">Queremos sumar a nuestro equipo a personas apasionadas por el mundo digital, que disfruten mantenerse al día con las últimas tendencias y novedades del sector.</p>
+            <p class="texto-contacto">Queremos sumar a nuestro equipo a personas apasionadas por el mundo digital, que
+                disfruten mantenerse al día con las últimas tendencias y novedades del sector.</p>
             <p class="mail"><i class="fa-solid fa-envelope"></i>aresdigitalmarketing@gmail.com</p>
             <p class="phone"><i class="fa-solid fa-phone"></i> +54 9 11 1234-5678</p>
             <p class="ubi"><i class="fa-solid fa-location-dot"></i>Buenos Aires, Argentina</p>
@@ -94,11 +118,11 @@
 
         <nav class="menu-footer">
             <ul>
-                <li><a href="../index.html" target="_blank" >Inicio</a></li>
-                <li><a href="./nosotros.html" target="_blank" >Nosotros</a></li>
-                <li><a href="./servicios.html" target="_blank" >Servicios</a></li>
-                <li><a href="./portfolio.html" target="_blank" >Portfolio</a></li>
-                <li><a href="#"  >Contacto</a></li>
+                <li><a href="../index.html" target="_blank">Inicio</a></li>
+                <li><a href="./nosotros.html" target="_blank">Nosotros</a></li>
+                <li><a href="./servicios.html" target="_blank">Servicios</a></li>
+                <li><a href="./portfolio.html" target="_blank">Portfolio</a></li>
+                <li><a href="#">Contacto</a></li>
                 <li><a href="./bootstrap.html" target="_blank">Bootstrap</a></li>
             </ul>
         </nav>
@@ -106,8 +130,9 @@
         <div class="redes-footer">
             <h3>Nuestras Redes</h3>
             <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></a></i>
-            <a href="https://www.facebook.com/"target="_blank"><i class="fa-brands fa-facebook" id="logo-facebook"></a></i>
-            <a href="https://www.linkedin.com/"target="_blank"><i class="fa-brands fa-linkedin-in"></a></i>
+            <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"
+                    id="logo-facebook"></a></i>
+            <a href="https://www.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin-in"></a></i>
         </div>
 
         <div class="partner">
@@ -115,7 +140,7 @@
             <img src="../assets/img/Google-Partner.svg" alt="partner de Google">
         </div>
 
-        <div class="copyright" >
+        <div class="copyright">
             <p>© Copyright 2024-2034. All Rights Reserved. Ares Digital Marketing®</p>
         </div>
     </footer>

@@ -1,0 +1,127 @@
+@media(max-width:425px){
+    .TituloHome h1{
+        grid-column: 1/4;
+        padding: 1rem 0;
+        justify-self: center;
+        margin: 0;
+        align-self: end
+    }
+    .LineaDivisoraTitulo{
+        grid-column: 1/4;
+        align-self: start;
+        justify-self: center;
+        margin: 0;
+    }
+    .TituloHome h2{
+        grid-column: 1/4;
+        margin: 0;
+        justify-self: center;
+    }
+    .TituloHome{
+        height: 33rem;
+    }
+    .LogoEmpresaHome img{
+        height: 150px;
+    }
+    .Contenido-Dos-Home, .Contenido-Tres-Home{
+        grid-template-rows: repeat(2, 202px);
+    }
+    .FotoArticle1, .FotoArticle2{
+        grid-row: 1/3;
+    }
+    .Contenido-Dos-Home h3{
+        padding-left: 11%;
+        padding-right: 11%;
+        font-size: 1.2rem;
+    }
+    .Contenido-Tres-Home h3{
+        padding-left: 13%;
+        padding-right: 13%;
+        font-size: 1.3rem;
+    }
+    .ProyectosBox, .ClientesBox, .CampañasBox, .LeadsBox{
+        height: 150px;
+        width: 150px;
+        grid-row: 2/3;
+        align-self: end;
+    }
+    .ClientesContainer{
+        margin-top: 3rem;
+    }
+    .ClientesContainer h2{
+        font-size: 2rem;
+    }
+    .LogosClientes{
+        column-gap: 10rem;
+    }
+    .Titulo h1{
+        grid-column: 1/3;
+        grid-row: 1/2;
+        padding: 0;
+        font-size: 2rem;
+        margin: 0 3rem;
+        text-align: center;
+    }
+    .Titulo p{
+        grid-column: 1/3;
+        grid-row: 2/3;
+        justify-self: center;
+        margin: 0;
+        font-size: .9rem;
+        align-self: center;
+    }
+    .Logo-Titulo img{
+        display: none;
+    }
+    .Service-Foto{
+        height: 300px;
+    }
+    .service-box h2{
+        font-size: 2rem;
+    }
+    .red-box, .consul-box, .rebran-box, .seo-box{
+        height: 165px;
+    }
+    .red-box h2, .consul-box h2, .rebran-box h2, .seo-box h2{
+        font-size: 1.3rem;
+        margin: 1rem 0;
+        padding: 0 1rem;
+    }
+    .red-box p, .consul-box p, .rebran-box p, .seo-box p{
+        font-size: 1rem;
+        padding: 0rem 1rem;
+    }
+    .red-box, .consul-box, .rebran-box, .seo-box{
+        align-content: center;
+    }
+    .texto-service{
+        font-size: 1rem;
+    }
+    .navbar a{
+        font-size: 1.2rem;
+    }
+    .info-contacto h3{
+        grid-column: 1/4;
+        justify-self: center;
+        text-align: center;
+        margin: 0;
+    }
+    .texto-contacto{
+        margin: 0 2rem;
+    }
+    .mail, .phone, .ubi{
+        font-size: .5rem;
+    }
+    .empresa-contacto{
+        display: none;
+    }
+    .info-contacto{
+        grid-template-rows: repeat(3,1fr);
+    }
+    .logo{
+        font-size: 1rem;
+    }
+    .copyright p{
+        font-size: .5rem;
+    }
+}

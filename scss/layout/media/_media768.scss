@@ -1,15 +1,191 @@
-@media (min-width:876px){
-    .label_hamburguesa{
+@media(max-width: 768px){
+    .carousel-item{
+        height: 70vh;
+    }
+    .w-100{
+        height: 70vh;
+    }
+    .carousel-caption{
+        bottom: 125px;
+    }
+    .carousel-caption h5{
+        font-size: 17px;
+    }
+    .carousel-caption a{
+        padding: 10px 15px;
+        font-size: 15px;
+    }
+    .carousel-caption p{
+        width: 100%;
+        line-height: 1.5;
+        font-size: 12px;
+    }
+    .about-text{
+        padding-top: 50px;
+    }
+    .navbar-nav{
+        text-align: center;
+    }
+    .Logo-Titulo img{
+        height: 150px;
+        width: 150px;
+    }
+    .Contacto-foto{
+        height: 350px;
+    }
+    .formulario-Contacto{
+        margin: 3rem;
+    }
+    .info-contacto h3{
+        font-size: 1.5rem;
+        margin: 3rem 0 0 3rem;
+    }
+    .texto-contacto{
+        font-size: 1.3rem;
+        text-align: justify;
+    }
+    .empresa-contacto{
+        grid-column: 3 / 4;
+        justify-self: center;
+        margin: 1rem 0;
+        font-size: 1rem;
+    }
+    .Titulo h1{
+        font-size: 3rem;
+    }
+    .Titulo p{
+        font-size: 1rem;
+    }
+    .Contacto-box h2{
+        font-size: 2rem;
+        font-weight: normal;
+    }
+    .contacto1 h3{
+        font-size: 2rem;
+        margin: 3rem;
+    }
+    .contact-form{
+        grid-template-rows: repeat(5,1fr);
+    }
+    .contact-form .nombre{
+        grid-column: 1/3;
+        grid-row: 1/2;
+        margin: 0;
+    }
+    .contact-form .email{
+        grid-column: 1/3;
+        grid-row: 2/3;
+        margin: 0;
+    }
+    .contact-form .teléfono{
+        grid-column: 1/3;
+        grid-row: 3/4;
+        margin: 0;
+    }
+    .contact-form .mensaje{
+        grid-column: 1/3;
+        grid-row: 4/5;
+        margin: 0;
+    }
+    .contact-form .enviar{
+        grid-column: 1/3;
+        grid-row: 5/6;
+    }
+    .contact-form .enviar{
+        align-self: center;
+        text-align: center;
+    }
+    .contact-form label{
+        font-size: 1.3rem;
+    }
+    .contact-form textarea{
+        font-size: 1rem;
+        height: auto;
+        width: 95%;
+        padding: 1rem 0;
+    }
+    .contact-form input{
+        font-size: 1rem;
+        padding: 1rem 0;
+    }
+    .contact-form button{
+        width: 80%;
+    }
+    .mail,.phone,.ubi{
+        font-size: .8rem;
+    }
+    .info-contacto{
+        height: 450px;
+        background-size: cover;
+    }
+    .info-contacto i{
+        font-size: 1.2rem;
+    }
+    .TituloHome h1{
+        grid-column: 1/3;
+        font-size: 1rem;
+    }
+    .LineaDivisoraTitulo{
+        grid-column: 1/3;
+        width: 67%;
+    }
+    .Contenido-Uno-Home h2{
+        font-size: 2rem;
+    }
+    .Contenido-Uno-Home .nombre-empresa{
+        font-size: .5rem;
+        margin-right: 1.2rem;
+    }
+    .Contenido-Uno-Home p{
+        font-size: 1rem;
+        margin: 1rem 2rem;
+    }
+    .Contenido-Dos-Home h3{
+        padding-left: 18%;
+        padding-right: 18%;
+    }
+    .Contenido-Tres-Home h3{
+        padding-left: 23%;
+        padding-right: 23%;
+    }
+    .ProyectosBox, .ClientesBox, .CampañasBox, .LeadsBox{
+        height: 204px;
+        width: 200px;
+        justify-self: start;
+    }
+    .LeadsBox, .ClientesBox{
+        justify-self: end;
+    }
+    .ProyectosBox p, .ClientesBox p, .CampañasBox p, .LeadsBox p{
+        font-size: 1.5rem;
+    }
+    .ProyectosBox p i, .ClientesBox p i, .CampañasBox p i, .LeadsBox p i{
+        font-size: 1.5rem;
+    }
+    .LogosClientes{
+        column-gap: 3rem;
+    }
+    .redsocial-img, .consultoria-img, .rebranding-img, .seo-img{
         display: none;
     }
-    .ul_links{
-        position: static;
-        width: auto;
-        height: auto;
-        flex-direction: row;
-        gap: 2rem;
+    .red-box, .consul-box, .rebran-box, .seo-box{
+        width: 100%;
+        height: 200px ;
+        align-content: start;
     }
-    .link{
-        font-size: 1.2rem;
+    .red-box, .rebran-box{
+        border-right: 10px solid #00798B;
+        border-left: none;
+    }
+    .red-box h2, .consul-box h2, .rebran-box h2, .seo-box h2 {
+        font-size: 1.8rem;
+    }
+    .red-box p, .consul-box p, .rebran-box p, .seo-box p{
+        font-size: 1.3rem;
+        padding: 0rem 4rem;
+        text-align: justify;
+    }
+    .menu_hamburguesa:checked ~ .ul_links{
+        order: 1;
     }
 }

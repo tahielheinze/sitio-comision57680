@@ -1,0 +1,62 @@
+.Portfolio-foto {
+    background-image: url(../assets/img/portfolio-desktop.svg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+    @include flex (row,nowrap,center,center,none);
+}
+
+.Portfolio-box {
+    background-color: map-get($colores, 'box-color2' );
+    color: map-get($colores, 'texto-color1');
+    opacity: 90%;
+    width: 719px;
+    height: 146px;
+    align-content: center;
+
+    h2 {
+        font-size: map-get($fontsize, 'lg');
+        font-weight: bold;
+        text-align: center;
+        margin: 0;
+    }
+}
+
+// PORTFOLIO (contenido)
+
+.portfolios {
+    @include grid (repeat(2,1fr),repeat(2,1fr),3rem,3rem);
+    justify-content: center;
+    align-content: center;
+    margin: 6rem;
+}
+
+.carre-img,.faber-img,.sinte-img,.cine-img,.farma-img,.grido-img {
+    @include flex (none,nowrap,center,center,none);
+}
+
+.Carre-work h3,.Faber-work h3,.sinte-work h3,.Cine-work h3,.Farma-work h3,.Grido-work h3 {
+    font-size: 2.5rem;
+    font-weight: 550;
+    text-align: center;
+}
+
+.background-work1 {
+    background-color: map-get($colores, 'texto-color1');
+    border-top: 10px solid map-get($colores, 'box-color1');
+    height: 190px;
+}
+
+.background-work2 {
+    @extend .background-work1;
+    border-top: 10px solid map-get($colores, 'box-color2');
+}
+
+.portfolioText {
+    text-align: justify;
+    font-weight: 450;
+    font-size: 1.1rem;
+    padding: 0 3rem;
+}

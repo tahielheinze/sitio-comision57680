@@ -1,0 +1,174 @@
+.Contacto-foto {
+    background-image: url(../assets/img/Contacto-desktop.svg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+    @include flex (row,nowrap,center,center,none);
+}
+
+.Contacto-box {
+    background-color: map-get($colores, 'box-color2');
+    color: map-get($colores, 'texto-color1');
+    width: 719px;
+    height: 146px;
+    align-content: center;
+
+    h2 {
+        font-size: map-get($fontsize, 'lg');
+        font-weight: bold;
+        text-align: center;
+        margin: 0;
+    }
+}
+
+//CONTACTO CONTENIDO
+
+.contacto1 h3 {
+    font-size: map-get($fontsize, 'lg');
+    font-weight: normal;
+    text-align: center;
+    margin: 6rem;
+}
+
+// CONTACTO FORMULARIO
+
+.formulario-Contacto {
+    margin: 6rem;
+}
+
+.contact-form {
+    @include grid (repeat(2,1fr),repeat(4,1fr),20px,none);
+
+    .nombre {
+        @include pos-grid (unquote("repeat(1/2)"),unquote("repeat(1/2)"),none,none);
+        font-size: map-get($fontsize, 'md-lg');
+    }
+
+    .email {
+        @extend .nombre;
+        grid-row: 2/3;
+    }
+
+    .teléfono {
+        @extend .nombre;
+        grid-row: 3/4;
+    }
+
+    .mensaje {
+        @extend .nombre;
+        grid-row: 1/4;
+        grid-column: 2/3;
+    }
+
+    .enviar {
+        grid-column: 1 / 3;
+        grid-row: 4/5;
+        align-self: center;
+    }
+
+    input {
+        width: 95%;
+        padding: 1rem 1rem;
+        border: none;
+        background-color: map-get($colores, 'back-form');
+        font-size: map-get($fontsize, 'md');
+    }
+
+    textarea {
+        width: 97%;
+        height: 88%;
+        padding: 1rem 1rem;
+        border: none;
+        background-color: map-get($colores ,'back-form');
+        font-size: map-get($fontsize, 'md');
+    }
+
+    button {
+        width: 100%;
+        padding: 1rem;
+        border: none;
+        background-color: map-get($colores, 'box-color1');
+        color: map-get($colores, 'texto-color1');
+        font-weight: lighter;
+        font-size: map-get($fontsize, 'md');
+    }
+}
+
+#GoogleMapsIframe {
+    width: 100%;
+    height: 760px;
+    max-width: 1284px;
+}
+
+.ubicacion-mapa {
+    text-align: center;
+    max-width: 1920px;
+}
+
+// CONTACTO INFO
+
+.info-contacto {
+    background-image: url(../assets/img/info-contacto.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    @include grid (repeat(3,1fr),repeat(4,1fr),none,none);
+    color: map-get($colores, 'texto-color1');
+    height: 600px;
+
+    h3 {
+        @include pos-grid (unquote("1/2"),unquote("1/2"),start,center);
+        text-align: start;
+        margin: 3rem;
+        padding-right: 30px;
+        font-size: map-get($fontsize, 'lg');
+        font-weight: bold;
+
+    }
+
+    hr {
+        @extend .LineaDivisoraTitulo;
+        width: 90%;
+        @include pos-grid (unquote("1/4"),unquote("2/3"),none,none);
+    }
+}
+
+.texto-contacto {
+    @include pos-grid (unquote("1/3"),unquote("2/3"),start,center);
+    text-align: start;
+    font-size: map-get($fontsize, 'md-lg');
+    font-weight: normal ;
+    margin: 2rem;
+}
+
+.mail {
+    @include pos-grid (unquote("1/2"),unquote("3/4"),center,center);
+    text-align: center;
+    font-weight: normal;
+    font-size: map-get($fontsize, 'md');
+}
+
+.phone {
+    @extend .mail;
+    grid-column: 2/3;
+}
+
+.ubi {
+    @extend .mail;
+    grid-column: 3/4;
+}
+
+.empresa-contacto {
+    @include pos-grid (unquote("3/4"),unquote("4/5"),end,end);
+    font-size: map-get($fontsize, 'md') ;
+    font-weight: bold;
+    margin: 1rem 3rem;
+    color: map-get($colores, 'back-form');
+    opacity: 50%;
+}
+
+.info-contacto i {
+    font-size: map-get($fontsize, 'md');
+    margin: 10px;
+}

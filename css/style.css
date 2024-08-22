@@ -54,7 +54,7 @@ body {
   width: 180px;
   height: 180px; }
 
-.LineaDivisoraTitulo {
+.LineaDivisoraTitulo, .info-contacto hr {
   grid-column: 1/2;
   grid-row: 2/3;
   justify-self: start;
@@ -316,6 +316,474 @@ footer {
     text-align: center;
     margin: .5rem 0; }
 
+.Titulo {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  column-gap: none;
+  row-gap: none;
+  background-color: #ffffff; }
+  .Titulo h1 {
+    grid-column: 1/2;
+    grid-row: 1/3;
+    justify-self: none;
+    align-self: center;
+    color: #000000;
+    font-weight: bold;
+    margin: 0rem 3rem;
+    font-size: 3rem; }
+  .Titulo p {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    justify-self: start;
+    align-self: none;
+    color: #000000;
+    font-size: 1.5rem;
+    font-weight: normal;
+    margin: 0rem 3rem;
+    padding: 1rem 0 0 0; }
+
+.Logo-Titulo {
+  grid-column: 2/3;
+  grid-row: 1/3;
+  justify-self: end;
+  align-self: none;
+  align-content: center;
+  margin: 0rem 3rem 0rem 0rem; }
+  .Logo-Titulo img {
+    width: 200px;
+    height: 200px; }
+
+.About-Teamwork {
+  background-image: url(../assets/img/teamwork-2.svg);
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 600px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  column-gap: none;
+  row-gap: none; }
+
+.Trabajadores-box, .Ideas-box {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  background-color: #00798b;
+  color: #ffffff;
+  align-self: end;
+  align-content: center;
+  justify-self: start;
+  width: 360px;
+  height: 222px; }
+  .Trabajadores-box p, .Ideas-box p {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: normal;
+    margin: 0; }
+    .Trabajadores-box p strong, .Ideas-box p strong {
+      font-size: 3rem; }
+
+.Ideas-box {
+  background-color: #004c44;
+  justify-self: end; }
+  .Ideas-box p {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: normal;
+    margin: 0; }
+    .Ideas-box p strong {
+      font-size: 3rem; }
+
+.AboutPage {
+  background-color: #f7f5f6; }
+
+.mujer-1, .mujer-2, .mujer-3, .hombre-1, .hombre-2, .hombre-3 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  column-gap: none;
+  row-gap: none;
+  margin: 6rem; }
+
+.mujer1-img, .mujer2-img, .mujer3-img, .hombre1-img, .hombre2-img, .hombre3-img {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  justify-self: end;
+  align-self: none; }
+  .mujer1-img img, .mujer2-img img, .mujer3-img img, .hombre1-img img, .hombre2-img img, .hombre3-img img {
+    width: 500px;
+    height: 500px; }
+
+.mujer1-box, .mujer2-box, .mujer3-box {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  background-color: #ffffff;
+  color: #000000;
+  align-self: center;
+  align-content: center;
+  justify-self: center;
+  justify-content: center;
+  border-left: 10px solid #00798b;
+  height: 450px; }
+  .mujer1-box p, .mujer2-box p, .mujer3-box p {
+    text-align: justify;
+    margin: 1rem 3rem;
+    font-size: 1.5rem; }
+  .mujer1-box h3, .mujer2-box h3, .mujer3-box h3 {
+    text-align: justify;
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 3rem 3rem 1rem 3rem; }
+
+.hombre1-img, .hombre2-img, .hombre3-img {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  justify-self: start; }
+
+.hombre1-box, .hombre2-box, .hombre3-box {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  background-color: #ffffff;
+  color: #000000;
+  align-self: center;
+  align-content: center;
+  justify-self: center;
+  justify-content: center;
+  border-right: 10px solid #004c44;
+  height: 450px; }
+  .hombre1-box h3, .hombre2-box h3, .hombre3-box h3 {
+    text-align: justify;
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 3rem 3rem 1rem 3rem; }
+  .hombre1-box p, .hombre2-box p, .hombre3-box p {
+    text-align: justify;
+    margin: 1rem 3rem;
+    font-size: 1.5rem; }
+
+.Service-Foto {
+  background-image: url(../assets/img/service-desktop.svg);
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 600px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: none; }
+
+.service-box {
+  grid-column: none;
+  grid-row: none;
+  background-color: #004c44;
+  color: #ffffff;
+  align-self: none;
+  align-content: center;
+  justify-self: none;
+  width: 719px;
+  height: 146px; }
+  .service-box h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 0; }
+
+.Service-contenido {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: none;
+  gap: none;
+  align-content: center;
+  margin: 6rem; }
+
+.texto-service {
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 2rem; }
+
+.Service-contenido hr {
+  border: 0.5px solid #004c44; }
+
+.servicios {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  column-gap: 3rem;
+  row-gap: 3rem;
+  justify-content: center;
+  align-content: center;
+  margin: 6rem; }
+
+.servicio-redsocial, .servicio-consultoria, .servicio-rebranding, .servicio-seo {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: none; }
+
+.red-box, .consul-box, .seo-box, .rebran-box {
+  background-color: #ffffff;
+  border-left: 10px solid #00798b;
+  align-self: center;
+  align-content: center;
+  order: 1;
+  width: 302px;
+  height: 355px;
+  margin: 0; }
+  .red-box h2, .consul-box h2, .seo-box h2, .rebran-box h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center; }
+  .red-box p, .consul-box p, .seo-box p, .rebran-box p {
+    font-size: 1.5rem;
+    font-weight: normal;
+    padding-left: 3rem;
+    margin: 0; }
+
+.redsocial-img img {
+  margin-right: -3rem; }
+
+.consul-box, .seo-box {
+  border-left: 10px solid #004c44; }
+
+.consultoria-img img {
+  margin-right: -3rem; }
+
+.rebranding-img img {
+  margin-right: -3rem; }
+
+.seo-img img {
+  margin-right: -3rem; }
+
+.Portfolio-foto {
+  background-image: url(../assets/img/portfolio-desktop.svg);
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 600px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: none; }
+
+.Portfolio-box {
+  background-color: #004c44;
+  color: #ffffff;
+  opacity: 90%;
+  width: 719px;
+  height: 146px;
+  align-content: center; }
+  .Portfolio-box h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 0; }
+
+.portfolios {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  column-gap: 3rem;
+  row-gap: 3rem;
+  justify-content: center;
+  align-content: center;
+  margin: 6rem; }
+
+.carre-img, .faber-img, .sinte-img, .cine-img, .farma-img, .grido-img {
+  display: flex;
+  flex-direction: none;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: none; }
+
+.Carre-work h3, .Faber-work h3, .sinte-work h3, .Cine-work h3, .Farma-work h3, .Grido-work h3 {
+  font-size: 2.5rem;
+  font-weight: 550;
+  text-align: center; }
+
+.background-work1, .background-work2 {
+  background-color: #ffffff;
+  border-top: 10px solid #00798b;
+  height: 190px; }
+
+.background-work2 {
+  border-top: 10px solid #004c44; }
+
+.portfolioText {
+  text-align: justify;
+  font-weight: 450;
+  font-size: 1.1rem;
+  padding: 0 3rem; }
+
+.Contacto-foto {
+  background-image: url(../assets/img/Contacto-desktop.svg);
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 600px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: none; }
+
+.Contacto-box {
+  background-color: #004c44;
+  color: #ffffff;
+  width: 719px;
+  height: 146px;
+  align-content: center; }
+  .Contacto-box h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 0; }
+
+.contacto1 h3 {
+  font-size: 3rem;
+  font-weight: normal;
+  text-align: center;
+  margin: 6rem; }
+
+.formulario-Contacto {
+  margin: 6rem; }
+
+.contact-form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  column-gap: 20px;
+  row-gap: none; }
+  .contact-form .nombre, .contact-form .email, .contact-form .teléfono, .contact-form .mensaje {
+    grid-column: repeat(1/2);
+    grid-row: repeat(1/2);
+    justify-self: none;
+    align-self: none;
+    font-size: 2rem; }
+  .contact-form .email {
+    grid-row: 2/3; }
+  .contact-form .teléfono {
+    grid-row: 3/4; }
+  .contact-form .mensaje {
+    grid-row: 1/4;
+    grid-column: 2/3; }
+  .contact-form .enviar {
+    grid-column: 1 / 3;
+    grid-row: 4/5;
+    align-self: center; }
+  .contact-form input {
+    width: 95%;
+    padding: 1rem 1rem;
+    border: none;
+    background-color: #D9D9D9;
+    font-size: 1.5rem; }
+  .contact-form textarea {
+    width: 97%;
+    height: 88%;
+    padding: 1rem 1rem;
+    border: none;
+    background-color: #D9D9D9;
+    font-size: 1.5rem; }
+  .contact-form button {
+    width: 100%;
+    padding: 1rem;
+    border: none;
+    background-color: #00798b;
+    color: #ffffff;
+    font-weight: lighter;
+    font-size: 1.5rem; }
+
+#GoogleMapsIframe {
+  width: 100%;
+  height: 760px;
+  max-width: 1284px; }
+
+.ubicacion-mapa {
+  text-align: center;
+  max-width: 1920px; }
+
+.info-contacto {
+  background-image: url(../assets/img/info-contacto.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  column-gap: none;
+  row-gap: none;
+  color: #ffffff;
+  height: 600px; }
+  .info-contacto h3 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    justify-self: start;
+    align-self: center;
+    text-align: start;
+    margin: 3rem;
+    padding-right: 30px;
+    font-size: 3rem;
+    font-weight: bold; }
+  .info-contacto hr {
+    width: 90%;
+    grid-column: 1/4;
+    grid-row: 2/3;
+    justify-self: none;
+    align-self: none; }
+
+.texto-contacto {
+  grid-column: 1/3;
+  grid-row: 2/3;
+  justify-self: start;
+  align-self: center;
+  text-align: start;
+  font-size: 2rem;
+  font-weight: normal;
+  margin: 2rem; }
+
+.mail, .phone, .ubi {
+  grid-column: 1/2;
+  grid-row: 3/4;
+  justify-self: center;
+  align-self: center;
+  text-align: center;
+  font-weight: normal;
+  font-size: 1.5rem; }
+
+.phone {
+  grid-column: 2/3; }
+
+.ubi {
+  grid-column: 3/4; }
+
+.empresa-contacto {
+  grid-column: 3/4;
+  grid-row: 4/5;
+  justify-self: end;
+  align-self: end;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 1rem 3rem;
+  color: #D9D9D9;
+  opacity: 50%; }
+
+.info-contacto i {
+  font-size: 1.5rem;
+  margin: 10px; }
+
 .header {
   height: 80px;
   background-color: #0a2424;
@@ -379,6 +847,193 @@ ul {
   color: black;
   border-radius: .9375rem; }
 
+@media (max-width: 1440px) {
+  .info-contacto h3 {
+    font-size: 2rem;
+    margin: 3rem 0 3rem 3rem;
+    padding: 0; }
+  .mail, .phone, .ubi, .phone, .ubi {
+    font-size: 1rem; }
+  .texto-contacto {
+    font-size: 1.5rem;
+    margin: 3rem 0 3rem 3rem; }
+  .TituloHome h2 {
+    font-size: 3.5rem;
+    grid-column: 1/3; }
+  .Contenido-Uno-Home h2 {
+    font-size: 2.5rem; }
+  .Contenido-Uno-Home .nombre-empresa {
+    font-size: 1rem; }
+  .Contenido-Uno-Home p {
+    font-size: 1.3rem; }
+  .FotoArticle1, .FotoArticle2, .FotoArticle2 {
+    grid-row: 1 / 4;
+    grid-column: 1/3;
+    width: 100%;
+    height: 100%; }
+  .FotoArticle1 img, .FotoArticle2 img, .FotoArticle2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; }
+  .Contenido-Dos-Home, .Contenido-Tres-Home, .Contenido-Tres-Home {
+    margin: 3rem; }
+  .Contenido-Dos-Home h3, .Contenido-Tres-Home h3, .Contenido-Tres-Home h3 {
+    grid-row: 1/2;
+    font-size: 1.5rem;
+    padding-left: 34%;
+    padding-right: 34%;
+    align-self: center;
+    grid-column: 1/3; }
+  .Contenido-Tres-Home h3 {
+    padding-left: 20%;
+    padding-right: 20%; }
+  .ProyectosBox, .ClientesBox, .CampañasBox, .LeadsBox {
+    grid-column: 1/2;
+    grid-row: 3/5;
+    height: 250px;
+    width: 250px;
+    justify-self: center; }
+  .ClientesBox, .LeadsBox {
+    grid-column: 2/3; }
+  .ProyectosBox p i, .ClientesBox p i, .CampañasBox p i, .LeadsBox p i {
+    font-size: 2rem;
+    margin: 0.4rem; }
+  .ProyectosBox p, .ClientesBox p, .CampañasBox p, .LeadsBox p {
+    font-size: 2rem;
+    margin: 0.4rem; }
+  .ClientesContainer {
+    height: 160px; }
+  .LogosClientes {
+    column-gap: 10rem;
+    row-gap: 10rem; }
+  .menu li a {
+    font-size: 1.5rem; }
+  .LogoEnNavbar {
+    font-size: 1.7rem; }
+  .Logo-Titulo img {
+    width: 180px;
+    height: 180px; }
+  .service-box h2 {
+    font-size: 3rem; }
+  .Service-contenido {
+    margin: 3rem; }
+  .servicios {
+    margin: 3rem;
+    column-gap: 5rem; } }
+
+@media (max-width: 1219px) {
+  .LogosClientes {
+    column-gap: 7rem;
+    row-gap: 7rem; }
+  .LogosClientes img {
+    width: 150px;
+    height: 150px; }
+  footer {
+    grid-template-rows: repeat(6, 1fr);
+    margin-top: 3rem; }
+  .logoFooter {
+    grid-column: 1/4;
+    grid-row: 1/2;
+    justify-self: center;
+    align-self: center; }
+  .logoFooter img {
+    height: 150px; }
+  .partner {
+    grid-column: 1/4;
+    grid-row: 2/3;
+    align-self: center; }
+  .redes-footer {
+    grid-column: 1/4;
+    grid-row: 3/4; }
+  .menu-footer {
+    grid-column: 1/4;
+    grid-row: 4/7; }
+  .copyright {
+    grid-column: 1/4;
+    grid-row: 6/7; } }
+
+@media (max-width: 1024px) {
+  .menu li a {
+    font-size: 1rem; }
+  .navbar {
+    padding: 1.25rem 1rem; }
+  .menu li {
+    padding: 0 .5rem; }
+  .navbar a {
+    font-size: 1.5rem; }
+  .contact-form label {
+    font-size: 1.5rem; }
+  .contact-form textarea {
+    font-size: 1.3rem; }
+  #GoogleMapsIframe {
+    width: 100%;
+    max-width: 1024px;
+    height: 380px; }
+  .ubicacion-mapa iframe {
+    max-width: 1024px;
+    margin: 0; }
+  .contact-form {
+    column-gap: 30px; }
+  i {
+    margin: 0; }
+  #logo-facebook {
+    width: 56px;
+    height: 64px;
+    margin: 0rem 4rem; }
+  .TituloHome {
+    height: 34.5rem; }
+  .TituloHome h2 {
+    font-size: 2.6rem; }
+  .Contenido-Uno-Home h2 {
+    font-size: 2.5rem; }
+  .Contenido-Uno-Home .nombre-empresa {
+    font-size: 1rem; }
+  .Contenido-Uno-Home p {
+    font-size: 1.3rem; }
+  .Contenido-Dos-Home h3, .Contenido-Tres-Home h3 {
+    padding-left: 28%;
+    padding-right: 28%; }
+  .ClientesContainer h2 {
+    font-size: 2.5rem; }
+  .LogosClientes {
+    column-gap: 10rem;
+    row-gap: 3rem; }
+  .Contenido-Tres-Home h3 {
+    padding-left: 33%;
+    padding-right: 33%; }
+  .Titulo h1 {
+    font-size: 2.5rem; }
+  .Titulo p {
+    font-size: 1.5rem;
+    margin: 0rem 0rem 0rem 3rem; }
+  .service-box h2 {
+    font-size: 2.5rem; }
+  .service-box {
+    width: 550px; }
+  .texto-service {
+    padding: 0rem;
+    font-size: 1.5rem; }
+  .servicios {
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 0; }
+  .servicio-redsocial, .servicio-consultoria, .servicio-rebranding, .servicio-seo, .servicio-consultoria, .servicio-rebranding, .servicio-seo {
+    grid-row: 1/2;
+    grid-column: 1/3; }
+  .red-box, .consul-box, .seo-box, .rebran-box, .consul-box, .seo-box, .rebran-box, .seo-box {
+    height: 300px;
+    align-content: center; }
+  .red-box h2, .consul-box h2, .seo-box h2, .rebran-box h2, .consul-box h2, .seo-box h2, .rebran-box h2, .seo-box h2 {
+    font-size: 1.5rem; }
+  .red-box p, .consul-box p, .seo-box p, .rebran-box p, .consul-box p, .seo-box p, .rebran-box p, .seo-box p {
+    font-size: 1.5rem; }
+  .servicio-consultoria {
+    grid-row: 2/3; }
+  .servicio-rebranding {
+    grid-row: 3/4; }
+  .servicio-seo {
+    grid-row: 4/5; } }
+
 @media (min-width: 876px) {
   .label_hamburguesa {
     display: none; }
@@ -390,3 +1045,258 @@ ul {
     gap: 2rem; }
   .link {
     font-size: 1.2rem; } }
+
+@media (max-width: 768px) {
+  .carousel-item {
+    height: 70vh; }
+  .w-100 {
+    height: 70vh; }
+  .carousel-caption {
+    bottom: 125px; }
+  .carousel-caption h5 {
+    font-size: 17px; }
+  .carousel-caption a {
+    padding: 10px 15px;
+    font-size: 15px; }
+  .carousel-caption p {
+    width: 100%;
+    line-height: 1.5;
+    font-size: 12px; }
+  .about-text {
+    padding-top: 50px; }
+  .navbar-nav {
+    text-align: center; }
+  .Logo-Titulo img {
+    height: 150px;
+    width: 150px; }
+  .Contacto-foto {
+    height: 350px; }
+  .formulario-Contacto {
+    margin: 3rem; }
+  .info-contacto h3 {
+    font-size: 1.5rem;
+    margin: 3rem 0 0 3rem; }
+  .texto-contacto {
+    font-size: 1.3rem;
+    text-align: justify; }
+  .empresa-contacto {
+    grid-column: 3 / 4;
+    justify-self: center;
+    margin: 1rem 0;
+    font-size: 1rem; }
+  .Titulo h1 {
+    font-size: 3rem; }
+  .Titulo p {
+    font-size: 1rem; }
+  .Contacto-box h2 {
+    font-size: 2rem;
+    font-weight: normal; }
+  .contacto1 h3 {
+    font-size: 2rem;
+    margin: 3rem; }
+  .contact-form {
+    grid-template-rows: repeat(5, 1fr); }
+  .contact-form .nombre, .contact-form .email, .contact-form .teléfono, .contact-form .mensaje {
+    grid-column: 1/3;
+    grid-row: 1/2;
+    margin: 0; }
+  .contact-form .email {
+    grid-column: 1/3;
+    grid-row: 2/3;
+    margin: 0; }
+  .contact-form .teléfono {
+    grid-column: 1/3;
+    grid-row: 3/4;
+    margin: 0; }
+  .contact-form .mensaje {
+    grid-column: 1/3;
+    grid-row: 4/5;
+    margin: 0; }
+  .contact-form .enviar {
+    grid-column: 1/3;
+    grid-row: 5/6; }
+  .contact-form .enviar {
+    align-self: center;
+    text-align: center; }
+  .contact-form label {
+    font-size: 1.3rem; }
+  .contact-form textarea {
+    font-size: 1rem;
+    height: auto;
+    width: 95%;
+    padding: 1rem 0; }
+  .contact-form input {
+    font-size: 1rem;
+    padding: 1rem 0; }
+  .contact-form button {
+    width: 80%; }
+  .mail, .phone, .ubi, .phone, .ubi {
+    font-size: .8rem; }
+  .info-contacto {
+    height: 450px;
+    background-size: cover; }
+  .info-contacto i {
+    font-size: 1.2rem; }
+  .TituloHome h1 {
+    grid-column: 1/3;
+    font-size: 1rem; }
+  .LineaDivisoraTitulo, .info-contacto hr {
+    grid-column: 1/3;
+    width: 67%; }
+  .Contenido-Uno-Home h2 {
+    font-size: 2rem; }
+  .Contenido-Uno-Home .nombre-empresa {
+    font-size: .5rem;
+    margin-right: 1.2rem; }
+  .Contenido-Uno-Home p {
+    font-size: 1rem;
+    margin: 1rem 2rem; }
+  .Contenido-Dos-Home h3, .Contenido-Tres-Home h3 {
+    padding-left: 18%;
+    padding-right: 18%; }
+  .Contenido-Tres-Home h3 {
+    padding-left: 23%;
+    padding-right: 23%; }
+  .ProyectosBox, .ClientesBox, .CampañasBox, .LeadsBox {
+    height: 204px;
+    width: 200px;
+    justify-self: start; }
+  .LeadsBox, .ClientesBox {
+    justify-self: end; }
+  .ProyectosBox p, .ClientesBox p, .CampañasBox p, .LeadsBox p {
+    font-size: 1.5rem; }
+  .ProyectosBox p i, .ClientesBox p i, .CampañasBox p i, .LeadsBox p i {
+    font-size: 1.5rem; }
+  .LogosClientes {
+    column-gap: 3rem; }
+  .redsocial-img, .consultoria-img, .rebranding-img, .seo-img {
+    display: none; }
+  .red-box, .consul-box, .seo-box, .rebran-box, .consul-box, .seo-box, .rebran-box, .seo-box {
+    width: 100%;
+    height: 200px;
+    align-content: start; }
+  .red-box, .consul-box, .seo-box, .rebran-box, .rebran-box {
+    border-right: 10px solid #00798B;
+    border-left: none; }
+  .red-box h2, .consul-box h2, .seo-box h2, .rebran-box h2, .consul-box h2, .seo-box h2, .rebran-box h2, .seo-box h2 {
+    font-size: 1.8rem; }
+  .red-box p, .consul-box p, .seo-box p, .rebran-box p, .consul-box p, .seo-box p, .rebran-box p, .seo-box p {
+    font-size: 1.3rem;
+    padding: 0rem 4rem;
+    text-align: justify; }
+  .menu_hamburguesa:checked ~ .ul_links {
+    order: 1; } }
+
+@media (max-width: 600px) {
+  .texto-contacto {
+    grid-column: 1/4;
+    margin: 3rem;
+    font-size: 1rem; }
+  .info-contacto h3 {
+    grid-column: 1/3; }
+  .menu-footer ul li a {
+    font-size: 2rem; }
+  .menu-footer ul li {
+    padding: 10px; }
+  .info-contacto i {
+    font-size: .75rem; }
+  .mail, .phone, .ubi, .phone, .ubi {
+    font-size: .7rem; }
+  .navbar__div ul {
+    padding: 0; } }
+
+@media (max-width: 425px) {
+  .TituloHome h1 {
+    grid-column: 1/4;
+    padding: 1rem 0;
+    justify-self: center;
+    margin: 0;
+    align-self: end; }
+  .LineaDivisoraTitulo, .info-contacto hr {
+    grid-column: 1/4;
+    align-self: start;
+    justify-self: center;
+    margin: 0; }
+  .TituloHome h2 {
+    grid-column: 1/4;
+    margin: 0;
+    justify-self: center; }
+  .TituloHome {
+    height: 33rem; }
+  .LogoEmpresaHome img {
+    height: 150px; }
+  .Contenido-Dos-Home, .Contenido-Tres-Home, .Contenido-Tres-Home {
+    grid-template-rows: repeat(2, 202px); }
+  .FotoArticle1, .FotoArticle2, .FotoArticle2 {
+    grid-row: 1/3; }
+  .Contenido-Dos-Home h3, .Contenido-Tres-Home h3 {
+    padding-left: 11%;
+    padding-right: 11%;
+    font-size: 1.2rem; }
+  .Contenido-Tres-Home h3 {
+    padding-left: 13%;
+    padding-right: 13%;
+    font-size: 1.3rem; }
+  .ProyectosBox, .ClientesBox, .CampañasBox, .LeadsBox {
+    height: 150px;
+    width: 150px;
+    grid-row: 2/3;
+    align-self: end; }
+  .ClientesContainer {
+    margin-top: 3rem; }
+  .ClientesContainer h2 {
+    font-size: 2rem; }
+  .LogosClientes {
+    column-gap: 10rem; }
+  .Titulo h1 {
+    grid-column: 1/3;
+    grid-row: 1/2;
+    padding: 0;
+    font-size: 2rem;
+    margin: 0 3rem;
+    text-align: center; }
+  .Titulo p {
+    grid-column: 1/3;
+    grid-row: 2/3;
+    justify-self: center;
+    margin: 0;
+    font-size: .9rem;
+    align-self: center; }
+  .Logo-Titulo img {
+    display: none; }
+  .Service-Foto {
+    height: 300px; }
+  .service-box h2 {
+    font-size: 2rem; }
+  .red-box, .consul-box, .seo-box, .rebran-box, .consul-box, .seo-box, .rebran-box, .seo-box {
+    height: 165px; }
+  .red-box h2, .consul-box h2, .seo-box h2, .rebran-box h2, .consul-box h2, .seo-box h2, .rebran-box h2, .seo-box h2 {
+    font-size: 1.3rem;
+    margin: 1rem 0;
+    padding: 0 1rem; }
+  .red-box p, .consul-box p, .seo-box p, .rebran-box p, .consul-box p, .seo-box p, .rebran-box p, .seo-box p {
+    font-size: 1rem;
+    padding: 0rem 1rem; }
+  .red-box, .consul-box, .seo-box, .rebran-box, .consul-box, .seo-box, .rebran-box, .seo-box {
+    align-content: center; }
+  .texto-service {
+    font-size: 1rem; }
+  .navbar a {
+    font-size: 1.2rem; }
+  .info-contacto h3 {
+    grid-column: 1/4;
+    justify-self: center;
+    text-align: center;
+    margin: 0; }
+  .texto-contacto {
+    margin: 0 2rem; }
+  .mail, .phone, .ubi, .phone, .ubi {
+    font-size: .5rem; }
+  .empresa-contacto {
+    display: none; }
+  .info-contacto {
+    grid-template-rows: repeat(3, 1fr); }
+  .logo {
+    font-size: 1rem; }
+  .copyright p {
+    font-size: .5rem; } }

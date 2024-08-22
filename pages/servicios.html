@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,43 +8,63 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
+
 <body>
-    <header>
-        <div>
-            <nav class="navbar">
-                <a href="#" class="LogoEnNavbar">Ares Digital Marketing</a>
-                <ul class="menu">
-                    <li><a href="../index.html" >Inicio</a></li>
-                    <li><a href="./nosotros.html" >Nosotros</a></li>
-                    <li><a href="#" target="_blank" >Servicios</a></li>
-                    <li><a href="./portfolio.html" >Portfolio</a></li>
-                    <li><a href="./contacto.html" >Contacto</a></li>
-                </ul>
-            </nav>
-        </div>
+    <header class="header">
+        <nav class="navbar-menu">
+            <a class="logo" href="#">Ares Digital Marketing</a>
+
+            <label class="label_hamburguesa" for="menu_hamburguesa">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="list_icon"
+                    viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+                </svg>
+            </label>
+            <input class="menu_hamburguesa" type="checkbox" name="" id="menu_hamburguesa">
+            <ul class="ul_links">
+                <li class="li_links">
+                    <a class="link" href="../index.html">Inicio</a>
+                </li>
+                <li class="li_links">
+                    <a class="link" href="./Nosotros.html">Nosotros</a>
+                </li>
+                <li class="li_links">
+                    <a class="link" href="#">Servicios</a>
+                </li>
+                <li class="li_links">
+                    <a class="link" href="./Portfolio.html">Portfolio</a>
+                </li>
+                <li class="li_links">
+                    <a class="link" href="./Contacto.html">Contacto</a>
+                </li>
+            </ul>
+        </nav>
     </header>
     <main>
         <section class="Titulo">
-                <h1>Servicios</h1>
-                <p>Descubre lo que tenemos para ofrecerte.</p>
-                <div class="Logo-Titulo">
-                    <img src="../assets/img/logo-img-1.svg" alt="logotipo de la empresa">
+            <h1>Servicios</h1>
+            <p>Descubre lo que tenemos para ofrecerte.</p>
+            <div class="Logo-Titulo">
+                <img src="../assets/img/logo-img-1.svg" alt="logotipo de la empresa">
             </div>
         </section>
 
         <section class="Service-Foto">
             <div class="service-box">
                 <h2>Servicios que ofrecemos</h2>
-            </div>            
+            </div>
         </section>
 
         <section class="Service-contenido">
             <hr class="LineaDivisoraContenidos">
             <p class="texto-service">Nos especializamos en crear y optimizar Estrategias Digitales.</p>
             <hr class="LineaDivisoraContenidos">
-            <p class="texto-service">Contamos con expertos en diversas áreas para cubrir las necesidades de tu negocio de manera eficiente.</p>
+            <p class="texto-service">Contamos con expertos en diversas áreas para cubrir las necesidades de tu negocio
+                de manera eficiente.</p>
             <hr class="LineaDivisoraContenidos">
-            <p class="texto-service">Medimos, analizamos y optimizamos cada paso para maximizar tus beneficios con el presupuesto disponible.</p>
+            <p class="texto-service">Medimos, analizamos y optimizamos cada paso para maximizar tus beneficios con el
+                presupuesto disponible.</p>
             <hr class="LineaDivisoraContenidos">
         </section>
 
@@ -51,17 +72,20 @@
             <article class="servicio-redsocial">
                 <div class="red-box">
                     <h2>Redes Sociales</h2>
-                    <p>Gestión de Redes Sociales y campañas publicitarias en Facebook, Instagram, YouTube y LinkedIn.</p>
+                    <p>Gestión de Redes Sociales y campañas publicitarias en Facebook, Instagram, YouTube y LinkedIn.
+                    </p>
                 </div>
                 <div class="redsocial-img">
-                    <img src="../assets/img/RedesSociales-desktop.svg" alt="una computadora portatil y una pluma apoyada sobre un libro de anotaciones">
+                    <img src="../assets/img/RedesSociales-desktop.svg"
+                        alt="una computadora portatil y una pluma apoyada sobre un libro de anotaciones">
                 </div>
             </article>
 
             <article class="servicio-consultoria">
                 <div class="consul-box">
                     <h2>Consultoría</h2>
-                    <p>Te asesoramos para que puedas proyectar, implementar o auditar las estrategias de Marketing digital de tu empresa.</p>
+                    <p>Te asesoramos para que puedas proyectar, implementar o auditar las estrategias de Marketing
+                        digital de tu empresa.</p>
                 </div>
                 <div class="consultoria-img">
                     <img src="../assets/img/Consultoria-desktop.svg" alt="una junta laboral">
@@ -80,7 +104,7 @@
 
             <article class="servicio-seo">
                 <div class="seo-box">
-                    <h2>Posicionamiento  y SEO</h2>
+                    <h2>Posicionamiento y SEO</h2>
                     <p>Mejoramos tu presencia online mediante técnicas de SEO y campañas en Google Ads.</p>
                 </div>
                 <div class="seo-img">
@@ -99,19 +123,20 @@
 
         <nav class="menu-footer">
             <ul>
-                <li><a href="../index.html" target="_blank" >Inicio</a></li>
-                <li><a href="./nosotros.html" target="_blank" >Nosotros</a></li>
-                <li><a href="#"  >Servicios</a></li>
-                <li><a href="./portfolio.html" target="_blank" >Portfolio</a></li>
-                <li><a href="./contacto.html" target="_blank" >Contacto</a></li>
+                <li><a href="../index.html" target="_blank">Inicio</a></li>
+                <li><a href="./nosotros.html" target="_blank">Nosotros</a></li>
+                <li><a href="#">Servicios</a></li>
+                <li><a href="./portfolio.html" target="_blank">Portfolio</a></li>
+                <li><a href="./contacto.html" target="_blank">Contacto</a></li>
             </ul>
         </nav>
 
         <div class="redes-footer">
             <h3>Nuestras Redes</h3>
             <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></a></i>
-            <a href="https://www.facebook.com/"target="_blank"><i class="fa-brands fa-facebook" id="logo-facebook"></a></i>
-            <a href="https://www.linkedin.com/"target="_blank"><i class="fa-brands fa-linkedin-in"></a></i>
+            <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"
+                    id="logo-facebook"></a></i>
+            <a href="https://www.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin-in"></a></i>
         </div>
 
         <div class="partner">
@@ -119,7 +144,7 @@
             <img src="../assets/img/Google-Partner.svg" alt="partner de Google">
         </div>
 
-        <div class="copyright" >
+        <div class="copyright">
             <p>© Copyright 2024-2034. All Rights Reserved. Ares Digital Marketing®</p>
         </div>
     </footer>

@@ -1,17 +1,392 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
 * {
   font-family: "Urbanist", sans-serif;
   margin: 0;
   padding: 0;
   border: 0;
-  box-sizing: border-box;
-  background-color: #f7f5f6;
-  overflow-x: hidden; }
+  box-sizing: border-box; }
 
-.ProyecotsBox {
+body {
+  background-color: #f7f5f6; }
+
+.grid-titulo {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  column-gap: 0;
+  row-gap: 0;
+  max-width: 100%;
+  height: 525px; }
+
+.TituloHome {
+  background-image: url(../assets/img/cohete-1.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  color: #ffffff; }
+  .TituloHome h1 {
+    font-size: 1.5rem;
+    font-weight: normal;
+    margin: 0rem 3rem;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    justify-self: start;
+    align-self: end; }
+  .TituloHome h2 {
+    font-size: 3rem;
+    grid-column: 1/2;
+    grid-row: 2/3;
+    justify-self: start;
+    align-self: start;
+    margin: 0rem 3rem;
+    font-weight: normal; }
+  .TituloHome .LogoEmpresaHome {
+    grid-column: 2/3;
+    grid-row: 3/4;
+    justify-self: center;
+    align-self: center; }
+
+.LogoEmpresaHome img {
+  width: 180px;
+  height: 180px; }
+
+.LineaDivisoraTitulo {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  justify-self: start;
+  align-self: start;
+  margin: 0rem 3rem;
+  width: 100%;
+  border: 1px solid white; }
+
+.Contenido-Uno-Home {
+  margin: 6rem 3rem; }
+  .Contenido-Uno-Home h2 {
+    font-size: 3rem;
+    text-align: center;
+    font-weight: normal;
+    padding: 0 0 2rem 0; }
+
+.LineaDivisoraContenidos {
+  width: 100%;
+  border: 1px solid gray; }
+
+.Contenido-Uno-Home p {
+  font-size: 1.5rem;
+  text-align: justify;
+  padding: 3rem;
+  font-weight: 500; }
+
+.Contenido-Uno-Home .nombre-empresa {
+  font-size: 1rem;
+  text-align: end;
+  padding: 1rem 0;
+  font-weight: normal; }
+
+.Contenido-Dos-Home, .Contenido-Tres-Home {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 202px);
+  column-gap: 0;
+  row-gap: 0;
+  margin: 6rem 3rem; }
+
+.FotoArticle1, .FotoArticle2 {
+  grid-column: 1/3;
+  grid-row: 1/4;
+  justify-self: none;
+  align-self: none; }
+  .FotoArticle1 img, .FotoArticle2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; }
+
+.Contenido-Dos-Home h3, .Contenido-Tres-Home h3 {
   grid-column: 1/3;
   grid-row: 1/2;
+  justify-self: center;
+  align-self: center;
+  font-size: 1.5rem;
+  order: 1;
+  font-weight: normal;
+  padding: 0 34.5%;
+  text-align: justify; }
+
+.ProyectosBox {
+  grid-column: 1/2;
+  grid-row: 3/5;
   background-color: #00798b;
   color: #ffffff;
   align-self: center;
+  align-content: center;
+  justify-self: center;
+  text-align: center;
+  font-size: 2rem;
+  height: 250px;
+  width: 250px; }
+  .ProyectosBox p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center; }
+    .ProyectosBox p i {
+      font-size: 1.5rem;
+      margin: 0 0.5rem; }
+
+.ClientesBox {
+  grid-column: 2/3;
+  grid-row: 3/5;
+  background-color: #004c44;
+  color: #ffffff;
+  align-self: center;
+  align-content: center;
+  justify-self: center;
+  text-align: center;
+  font-size: 2rem;
+  height: 250px;
+  width: 250px; }
+  .ClientesBox p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center; }
+    .ClientesBox p i {
+      font-size: 1.5rem;
+      margin: 0 0.5rem; }
+
+i {
+  font-size: 4rem;
+  margin-right: 2rem; }
+
+.Contenido-Tres-Home h3 {
+  grid-column: 1/3;
+  grid-row: 1/2;
+  justify-self: center;
+  align-self: center;
+  font-size: 1.5rem;
+  order: 1;
+  font-weight: normal;
+  padding: 0 38%;
+  text-align: justify;
+  color: #ffffff; }
+
+.CampañasBox {
+  grid-column: 1/2;
+  grid-row: 3/5;
+  background-color: #00798b;
+  color: #ffffff;
+  align-self: center;
+  align-content: center;
+  justify-self: center;
+  text-align: center;
+  font-size: 2rem;
+  height: 250px;
+  width: 250px; }
+  .CampañasBox p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center; }
+    .CampañasBox p i {
+      font-size: 1.5rem;
+      margin: 0 0.5rem; }
+
+.LeadsBox {
+  grid-column: 2/3;
+  grid-row: 3/5;
+  background-color: #004c44;
+  color: #ffffff;
+  align-self: center;
+  align-content: center;
+  justify-self: center;
+  text-align: center;
+  font-size: 2rem;
+  height: 250px;
+  width: 250px; }
+  .LeadsBox p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center; }
+    .LeadsBox p i {
+      font-size: 1.5rem;
+      margin: 0 0.5rem; }
+
+.ClientesContainer {
+  background-color: #0a2424;
+  color: #ffffff;
+  height: 222px;
+  align-content: center;
+  margin-top: 3rem; }
+  .ClientesContainer h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center; }
+
+.LogosClientes {
+  display: flex;
+  flex-direction: none;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10rem;
+  margin: 3rem; }
+
+footer {
+  margin-top: 6rem;
+  border-top: 2px solid black;
+  background-color: #ffffff;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: repeat(3,1fr);
+  column-gap: none;
+  row-gap: none;
+  max-width: 100%; }
+
+.logoFooter {
+  grid-column: 1/2;
+  grid-row: 1/4;
+  justify-self: center;
+  align-self: center; }
+  .logoFooter img {
+    width: 540px;
+    height: 250px; }
+
+.menu-footer {
+  grid-column: 2/3;
+  grid-row: 1/4;
+  justify-self: none;
+  align-self: none;
+  display: flex;
+  flex-direction: none;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: none;
+  font-weight: bold; }
+  .menu-footer ul {
+    padding: 0; }
+    .menu-footer ul li {
+      list-style: none;
+      text-align: center;
+      padding: 5px; }
+      .menu-footer ul li a {
+        text-decoration: none;
+        color: #1d907a;
+        font-size: 2.4rem;
+        font-weight: bold; }
+
+.redes-footer {
+  grid-column: 3/4;
+  grid-row: 1/2;
+  justify-self: center;
+  align-self: none;
   align-content: center; }
+  .redes-footer h3 {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    color: #1d907a;
+    margin: 2rem 0; }
+  .redes-footer a {
+    color: #1d907a; }
+  .redes-footer i {
+    font-size: 3rem;
+    margin-right: 2rem; }
+
+.partner {
+  grid-column: 3/4;
+  grid-row: 2/3;
+  justify-self: center;
+  align-self: end; }
+  .partner img {
+    margin-right: 14px; }
+
+.copyright {
+  grid-column: 1/4;
+  grid-row: 3/4;
+  justify-self: center;
+  align-self: end;
+  background-color: #0a2424;
+  width: 100%; }
+  .copyright p {
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: normal;
+    text-align: center;
+    margin: .5rem 0; }
+
+.header {
+  height: 80px;
+  background-color: #0a2424;
+  overflow: visible; }
+
+a {
+  text-decoration: none; }
+
+ul {
+  list-style: none; }
+
+.navbar-menu {
+  height: 100%;
+  display: flex;
+  flex-direction: none;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: none;
+  position: relative;
+  padding: 0 2rem; }
+
+.logo {
+  color: #ffffff;
+  font-size: 1.7rem; }
+
+.list_icon {
+  color: #ffffff;
+  cursor: pointer; }
+
+.menu_hamburguesa {
+  display: none; }
+
+.menu_hamburguesa:checked ~ .ul_links {
+  height: calc(100vh - 80px); }
+
+.ul_links {
+  background-color: #0a2424;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 80px;
+  left: 0; }
+
+.link {
+  font-size: 3rem;
+  color: #ffffff;
+  font-weight: bold;
+  transition: all .3s ease; }
+
+.link:hover {
+  padding: .3125rem .625rem;
+  background-color: white;
+  color: black;
+  border-radius: .9375rem; }
+
+@media (min-width: 876px) {
+  .label_hamburguesa {
+    display: none; }
+  .ul_links {
+    position: static;
+    width: auto;
+    height: auto;
+    flex-direction: row;
+    gap: 2rem; }
+  .link {
+    font-size: 1.2rem; } }

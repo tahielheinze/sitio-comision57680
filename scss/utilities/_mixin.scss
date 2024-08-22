@@ -13,11 +13,18 @@
     align-items: $align;
     gap: $gap;
 }
-@mixin box-contenedora1 ($grid-col,$grid-row,$bc-color,$color,$align-s,$align-c){
+@mixin box-contenedora ($grid-col,$grid-row,$bc-color,$color,$align-s,$align-c,$justify-s){
     grid-column: $grid-col;
     grid-row: $grid-row;
     background-color: $bc-color;
     color: $color;
     align-self: $align-s;
     align-content: $align-c;
+    justify-self: $justify-s;
+}
+@mixin pos-grid ($grid-col,$grid-row,$justify-self,$align-self){
+    grid-column: $grid-col;
+    grid-row: $grid-row;
+    justify-self: $justify-self;
+    align-self: $align-self;
 }

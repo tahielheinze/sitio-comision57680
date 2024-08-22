@@ -1,3 +1,228 @@
-.ProyecotsBox{
-    @include box-contenedora1 (unquote("1/3"),unquote("1/2"), map-get($colores,'box-color1'), map-get($colores,'text-color1'), center, center)
+body {
+    background-color: map-get($colores, 'color-back');
+}
+
+.grid-titulo {
+    @include grid(repeat(3,1fr),repeat(3,1fr),0,0);
+    max-width: 100%;
+    height: 525px;
+}
+
+.TituloHome {
+    background-image: url(../assets/img/cohete-1.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    color: map-get($colores, 'texto-color1' );
+
+    h1 {
+        font-size: map-get($fontsize, 'md');
+        font-weight: normal;
+        margin: $margin-left;
+        @include pos-grid(unquote("1/2"),unquote("1/2"),start,end);
+    }
+
+    h2 {
+        font-size: map-get($fontsize, 'lg');
+        @include pos-grid(unquote("1/2"),unquote("2/3"),start,start);
+        margin: $margin-left;
+        font-weight: normal
+    }
+
+    .LogoEmpresaHome {
+        @include pos-grid(unquote("2/3"),unquote("3/4"),center,center);
+    }
+}
+
+.LogoEmpresaHome img {
+    width: 180px;
+    height: 180px;
+}
+
+.LineaDivisoraTitulo {
+    @include pos-grid(unquote("1/2"),unquote("2/3"),start,start);
+    margin: $margin-left;
+    width: 100%;
+    border: 1px solid white;
+}
+
+// CONTENIDO UNO (PRESENTACION)
+
+.Contenido-Uno-Home {
+    margin: $margin-total;
+
+    h2 {
+        font-size: map-get($fontsize, 'lg');
+        text-align: center;
+        font-weight: normal;
+        padding: 0 0 2rem 0;
+    }
+}
+
+.LineaDivisoraContenidos {
+    width: 100%;
+    border: 1px solid gray;
+}
+
+.Contenido-Uno-Home {
+    p {
+        font-size: map-get($fontsize, 'md');
+        text-align: justify;
+        padding: 3rem;
+        font-weight: 500;
+    }
+
+    .nombre-empresa {
+        font-size: map-get($fontsize, 'sm');
+        text-align: end;
+        padding: 1rem 0;
+        font-weight: normal;
+    }
+}
+
+// CONTENIDO DOS (MONTAÑA)
+
+.Contenido-Dos-Home {
+    @include grid(repeat(2,1fr),repeat(3,202px),0,0);
+    margin: $margin-total ;
+}
+
+.FotoArticle1 {
+    @include pos-grid (unquote("1/3"),unquote("1/4"),none,none);
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+}
+
+.Contenido-Dos-Home h3 {
+    @include pos-grid(unquote("1/3"),unquote("1/2"),center,center);
+    font-size: map-get($fontsize, 'md');
+    order: 1;
+    font-weight: normal;
+    padding: 0 34.5%;
+    text-align: justify
+}
+
+.ProyectosBox {
+    @include box-contenedora (unquote("1/2"),unquote("3/5"), map-get($colores,'box-color1'), map-get($colores,'texto-color1'), center, center,center);
+    text-align: center;
+    font-size: map-get($fontsize, 'md-lg');
+    height: 250px;
+    width: 250px;
+
+    p {
+        font-size: map-get($fontsize, 'md');
+        font-weight: bold;
+        text-align: center;
+        i{
+            font-size: map-get($fontsize, 'md');
+            margin: 0 0.5rem;
+        }
+    }
+}
+
+.ClientesBox {
+    @include box-contenedora (unquote("2/3"),unquote("3/5"), map-get($colores,'box-color2'), map-get($colores,'texto-color1'), center, center,center);
+    text-align: center;
+    font-size: map-get($fontsize, 'md-lg');
+    height: 250px;
+    width: 250px;
+
+    p {
+        font-size: map-get($fontsize, 'md');
+        font-weight: bold;
+        text-align: center;
+        i{
+            font-size: map-get($fontsize, 'md');
+            margin: 0 0.5rem;
+        }
+    }
+}
+
+i {
+    font-size: 4rem;
+    margin-right: 2rem;
+}
+
+//CONTENIDO TRES (NATURALEZA)
+
+.Contenido-Tres-Home {
+    @extend .Contenido-Dos-Home;
+}
+
+.FotoArticle2 {
+    @extend .FotoArticle1;
+}
+
+.Contenido-Tres-Home h3 {
+    @include pos-grid(unquote("1/3"),unquote("1/2"),center,center);
+    font-size: map-get($fontsize, 'md');
+    order: 1;
+    font-weight: normal;
+    padding: 0 38%;
+    text-align: justify;
+    color: map-get($colores, 'texto-color1');
+}
+
+.CampañasBox {
+    @include box-contenedora (unquote("1/2"),unquote("3/5"), map-get($colores,'box-color1'), map-get($colores,'texto-color1'), center, center,center);
+    text-align: center;
+    font-size: map-get($fontsize, 'md-lg');
+    height: 250px;
+    width: 250px;
+
+    p {
+        font-size: map-get($fontsize, 'md');
+        font-weight: bold;
+        text-align: center;
+        i{
+            font-size: map-get($fontsize, 'md');
+            margin: 0 0.5rem;
+        }
+    }
+}
+
+.LeadsBox {
+    @include box-contenedora (unquote("2/3"),unquote("3/5"), map-get($colores,'box-color2'), map-get($colores,'texto-color1'), center, center,center);
+    text-align: center;
+    font-size: map-get($fontsize, 'md-lg');
+    height: 250px;
+    width: 250px;
+
+    p {
+        font-size: map-get($fontsize, 'md');
+        font-weight: bold;
+        text-align: center;
+        i{
+            font-size: map-get($fontsize, 'md');
+            margin: 0 0.5rem;
+        }
+    }
+}
+
+//CONTENIDO CUATRO (CLIENTES)
+
+.ClientesContainer {
+    background-color: map-get($colores, 'texto-back');
+    color: map-get($colores, 'texto-color1');
+    height: 222px;
+    align-content: center;
+    margin-top: 3rem;
+
+    h2 {
+        font-size: map-get($fontsize, 'lg');
+        font-weight: bold;
+        text-align: center;
+    }
+}
+
+.LogosClientes {
+    @include flex(none,wrap,center,center,10rem);
+    margin: 3rem;
 }

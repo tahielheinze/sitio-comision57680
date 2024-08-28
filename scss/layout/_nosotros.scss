@@ -16,7 +16,7 @@
     font-size: map-get($fontsize, 'md');
     font-weight: normal;
     margin: $margin-left;
-    padding: 1rem 0 0 0;
+    padding: 1.5rem 0 0 0;
     }
 }
 
@@ -91,7 +91,7 @@
 }
 
 .mujer1-img {
-    @include pos-grid (unquote("1/2"),unquote("1/2"),end,none);
+    @include pos-grid (unquote("1/2"),unquote("1/2"),center,none);
 
     img {
         width: 500px;
@@ -151,7 +151,7 @@
     @extend .mujer1-img;
     grid-column: 2/3;
     grid-row: 1/2;
-    justify-self: start;
+    justify-self: center;
 }
 
 .hombre1-box {

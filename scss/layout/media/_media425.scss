@@ -124,4 +124,56 @@
     .copyright p{
         font-size: .5rem;
     }
+    /* NOSTORS PAGE*/
+    .About-Teamwork{
+        height: 150px;
+    }
+    .Trabajadores-box, .Ideas-box{
+        width: 100px;
+        height: auto;
+    }
+    .Trabajadores-box p, .Ideas-box p{
+        font-size: 1rem;
+        & i{
+            font-size: 1rem;
+        }
+        strong{
+            font-size: 1rem;
+        }
+    }
+    .mujer1-box, .mujer2-box, .mujer3-box, .mujer2-box, .mujer3-box, .hombre1-box, .hombre2-box, .hombre3-box, .hombre2-box, .hombre3-box{
+        height: 350px;
+        align-self: start;
+        p{
+            margin: 0 .5rem;
+            font-size: 1rem;
+            text-align: center;
+        }
+        h3{
+            margin: .5rem 0;
+            font-size: 1.3rem;
+            text-align: center;
+        }
+    }
+    .mujer1-box, .mujer2-box, .mujer3-box{
+        border-top: 10px solid map-get($colores, 'box-color1');
+        border-left: none;
+    }
+    .hombre1-box, .hombre2-box, .hombre3-box{
+        border-top: 10px solid map-get($colores, 'box-color2');
+        border-right: none;
+    }
+    .mujer-1, .mujer-2, .mujer-3, .hombre-1, .hombre-2, .hombre-3{
+        margin: 3rem 4rem;
+    }
+    .mujer1-img, .mujer2-img, .mujer3-img, .hombre1-img, .hombre2-img, .hombre3-img, .mujer2-img, .mujer3-img, .hombre1-img, .hombre2-img, .hombre3-img, .hombre2-img, .hombre3-img{
+        height: 360px;
+    }
+    .logoFooter img{
+        height: 150px;
+        width: 350px;
+    }
+    #logo-facebook {
+        margin: 0rem 2rem 0rem 1rem;
+    }
 }

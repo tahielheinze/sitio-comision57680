@@ -28,4 +28,39 @@
 .mujer-1, .mujer-2, .mujer-3, .hombre-1, .hombre-2, .hombre-3, .mujer-2, .mujer-3, .hombre-1, .hombre-2, .hombre-3, .hombre-2, .hombre-3{
     margin: 2.5rem 2rem;
 }
+.Contenido-Dos-Home h3{
+    font-size: 1rem;
+    padding: 0 9%;
+}
+.ProyectosBox, .ClientesBox, .CampañasBox, .LeadsBox{
+    opacity: 90%;
+    height: auto;
+    width: auto;
+}
+.FotoArticle1, .FotoArticle2, .FotoArticle2{
+    grid-row: 1/4;
+}
+.FotoArticle1 img, .FotoArticle2 img{
+    object-fit: cover;
+}
+// PORTFOLIO  PAGE
+#TituloParrafo{
+    font-size: .8rem;
+    text-align: center;
+}
+.Portfolio-foto{
+    height: 300px;
+}
+.carre-img img, .faber-img img, .sinte-img img, .cine-img img, .farma-img img, .grido-img img{
+    width: 300px;
+}
+.portfolios{
+    row-gap: 3rem;
+}
+.background-work1, .background-work2, .background-work2{
+    height: auto;
+}
+.portfolioText{
+    padding: 0 1rem;
+}
 }

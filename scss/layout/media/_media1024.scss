@@ -154,5 +154,14 @@
             text-align: start;
         }
     }
-
+    // PORTFOLIO PAGE
+    .background-work1, .background-work2{
+        align-content: center;
+    }
+    .portfolios{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    #TituloParrafo{
+        font-size: 1.1rem;
+    }
 }

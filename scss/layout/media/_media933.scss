@@ -1,0 +1,30 @@
+@media (min-width:933px){
+    .label_hamburguesa{
+        display: none;
+    }
+    .ul_links{
+        position: static;
+        width: auto;
+        height: auto;
+        flex-direction: row;
+        gap: 2rem;
+    }
+    .link{
+        font-size: 1.2rem;
+    }
+}
+@media (min-width: 769px) and (max-width:933px){
+    .TituloHome h1{
+        grid-column: 1/3;
+        font-size: 1rem;
+    }
+    .TituloHome h2{
+        font-size: 1.8rem;
+    }
+    .Contenido-Dos-Home h3{
+        padding: 0% 20%;
+    }
+    .Contenido-Tres-Home h3{
+        padding: 0% 27%;
+    }
+}

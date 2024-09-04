@@ -34,22 +34,7 @@
     margin: 2.5rem 2rem;
 }
 
-// HOME PAGE    
-.Contenido-Dos-Home h3{
-    font-size: 1rem;
-    padding: 0 9%;
-}
-.ProyectosBox, .ClientesBox, .CampañasBox, .LeadsBox{
-    opacity: 90%;
-    height: auto;
-    width: auto;
-}
-.FotoArticle1, .FotoArticle2, .FotoArticle2{
-    grid-row: 1/4;
-}
-.FotoArticle1 img, .FotoArticle2 img{
-    object-fit: cover;
-}
+
 
 // PORTFOLIO  PAGE
 #TituloParrafo{
@@ -79,6 +64,21 @@
 .Contenido-Uno-Home p{
     margin: 1rem 0rem;
 }
+.Contenido-Dos-Home h3{
+    font-size: 1rem;
+    padding: 0 9%;
+}
+.ProyectosBox, .ClientesBox, .CampañasBox, .LeadsBox{
+    opacity: 90%;
+    height: auto;
+    width: auto;
+}
+.FotoArticle1, .FotoArticle2, .FotoArticle2{
+    grid-row: 1/4;
+}
+.FotoArticle1 img, .FotoArticle2 img{
+    object-fit: cover;
+}
 .Contenido-Dos-Home, .Contenido-Tres-Home{
     grid-template-rows: repeat(2,202px);
 }
@@ -97,5 +97,32 @@
 }
 .ClientesContainer h2{
     font-size: 2rem;
+}
+// SERVICE PAGE
+.Titulo{
+    h1{
+        font-size: 2rem;
+    }
+}
+.Service-Foto{
+    height: 200px;
+}
+.service-box{
+    h2{
+        font-size: 1.5rem;
+    }
+}
+.texto-service{
+    font-size: 1rem;
+}
+.red-box, .consul-box, .seo-box, .rebran-box{
+    p{
+        padding: 0 .5rem;
+        font-size: .9rem;
+        text-align: center;
+    }
+    h2{
+        font-size: 1.15rem;
+    }
 }
 }

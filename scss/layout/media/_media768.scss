@@ -1,4 +1,5 @@
 @media(max-width: 768px){
+    // BOOTSTRAP
     .carousel-item{
         height: 70vh;
     }
@@ -121,6 +122,7 @@
     .info-contacto i{
         font-size: 1.2rem;
     }
+
     // HOME PAGE
     .grid-titulo{
         grid-template-columns: repeat(1,1fr);
@@ -194,30 +196,37 @@
     .LogosClientes{
         column-gap: 3rem;
     }
+
+    // SERVICE PAGE
     .redsocial-img, .consultoria-img, .rebranding-img, .seo-img{
         display: none;
     }
     .red-box, .consul-box, .rebran-box, .seo-box{
         width: 100%;
         height: 200px ;
-        align-content: start;
+        align-content: center;
     }
     .red-box, .rebran-box{
         border-right: 10px solid #00798B;
         border-left: none;
+        h2{
+            font-size: 1.8rem;
+        }
+        p{
+            font-size: 1.3rem;
+            padding: 0 4rem;
+            text-align: justify;
+        }
     }
-    .red-box h2, .consul-box h2, .rebran-box h2, .seo-box h2 {
-        font-size: 1.8rem;
-    }
-    .red-box p, .consul-box p, .rebran-box p, .seo-box p{
-        font-size: 1.3rem;
-        padding: 0rem 4rem;
-        text-align: justify;
+    .consul-box,.seo-box{
+        border-right: none;
+        border-left: 10px solid map-get($colores, 'box-color2');
     }
     .menu_hamburguesa:checked ~ .ul_links{
         order: 1;
     }
-    /* NOSOTROS PAGE */
+
+    // NOSOTROS PAGE
     .Logo-Titulo{
         display: none;
     }

@@ -44,4 +44,22 @@
             }
         }
     }
+
+    // SERVICE PAGE
+    .service-box{
+        height: 100px;
+    }
+    .texto-service {
+        font-size: 1.2rem;
+        padding: 1.5rem .6rem;
+    }
+    .red-box, .rebran-box{
+        height: 180px;
+        h2{
+            font-size: 1.3rem;
+        }
+        p{
+            font-size: 1.2rem;
+        }
+    }
 }

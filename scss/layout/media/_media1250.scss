@@ -1,11 +1,22 @@
 //HOMEPAGE
 @media(max-width: 1250px){
+    // HOME PAGE
     .TituloHome{
         h1{
             font-size: 1rem;
         }
         h2{
             font-size: 3rem;
+        }
+    }
+
+    // NOSOTROS PAGE
+    .Trabajadores-box, .Ideas-box{
+        width: 313px;
+    }
+    .mujer1-box, .mujer2-box, .mujer3-box, .hombre1-box, .hombre2-box,.hombre3-box{
+        p{
+            margin: 1rem;
         }
     }
 }

@@ -5,29 +5,36 @@
 .logoFooter img{
     width: 250px;
 }
+
+//NOSOTROS PAGE
 .Titulo p{
-    font-size: .8rem;
+    font-size: .6rem;
     padding: 0;
+    align-self: center;
 }
 .Trabajadores-box, .Ideas-box, .Ideas-box {
-    height: 50px;
-
+    display: none;
 }
-.Trabajadores-box p, .Ideas-box p{
-    font-size: .6rem;
-    & i{
-        font-size: .6rem;
-    }
-    strong{
-        font-size: .6rem;
-    }
-}
-.mujer1-box p, .mujer2-box p, .mujer3-box p, .mujer2-box p, .mujer3-box p, .mujer2-box p, .mujer3-box p, .hombre1-box p, .hombre2-box p, .hombre3-box p, .hombre2-box p, .hombre3-box p, .hombre2-box p, .hombre3-box p{
+.mujer1-box, .mujer2-box, .mujer3-box,.hombre1-box, .hombre2-box, .hombre3-box{
+    border-left: none;
+    border-top: 10px solid #00798b;;
+    p{
     font-size: .9rem;
+    }
+    h3{
+        font-size: 1.6rem;
+        margin: 1rem 2rem;
+    }
+}
+.hombre1-box,.hombre2-box,.hombre3-box{
+    border-right: none;
+    border-top: 10px solid #004c44;
 }
 .mujer-1, .mujer-2, .mujer-3, .hombre-1, .hombre-2, .hombre-3, .mujer-2, .mujer-3, .hombre-1, .hombre-2, .hombre-3, .hombre-2, .hombre-3{
     margin: 2.5rem 2rem;
 }
+
+// HOME PAGE    
 .Contenido-Dos-Home h3{
     font-size: 1rem;
     padding: 0 9%;
@@ -43,6 +50,7 @@
 .FotoArticle1 img, .FotoArticle2 img{
     object-fit: cover;
 }
+
 // PORTFOLIO  PAGE
 #TituloParrafo{
     font-size: .8rem;
@@ -63,6 +71,7 @@
 .portfolioText{
     padding: 0 1rem;
 }
+
 //HOME PAGE
 .logo{
     font-size: 1rem;

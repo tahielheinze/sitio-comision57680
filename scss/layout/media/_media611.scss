@@ -1,4 +1,5 @@
 @media(max-width: 611px){
+    // CONTACO PAGE
     .texto-contacto{
         grid-column: 1/4;
         margin: 3rem;
@@ -22,11 +23,25 @@
     .navbar__div ul{
         padding: 0;
     }
+
     // HOME PAGE
     .Contenido-Dos-Home h3{
         padding: 0% 13%;
     }
     .FotoArticle1 img{
         object-fit: cover;
+    }
+
+    //NOSOTROS PAGE
+    .Trabajadores-box, .Ideas-box{
+        p{
+            font-size: 1.7rem;
+            & i{
+                font-size: 2rem;
+            }
+            & strong{
+                font-size: 1.9rem;
+            }
+        }
     }
 }

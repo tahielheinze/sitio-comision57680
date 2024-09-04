@@ -1,4 +1,5 @@
 @media(max-width:1052px){
+    // NAVBAR
     .menu li a{
         font-size: 1rem;
     }
@@ -11,6 +12,8 @@
     .navbar a{
         font-size: 1.5rem;
     }
+
+    // CONTACTO PAGE
     .contact-form label{
         font-size: 1.5rem;
     }
@@ -32,11 +35,15 @@
     i{
         margin: 0;
     }
+
+    //FOOTER
     #logo-facebook{
         width: 56px;
         height: 64px;
         margin: 0rem 4rem;
     }
+
+    //HOME PAGE
     .TituloHome{
         height: 34.5rem;
     }
@@ -110,8 +117,8 @@
     .servicio-seo{
         grid-row: 4/5;
     }
-    /* NOSOTROS PAGE */
-
+    
+    // NOSOTROS PAGE
     .Trabajadores-box{
         grid-column: 1/2;
         justify-self: center;
@@ -124,11 +131,11 @@
         height: 350px;
         h3{
             font-size: 2rem;
-            margin: 1rem 3rem;
+            margin: 0rem 2rem;
         }
         p{
             font-size: 1.2rem;
-            margin: 1rem 1rem 1rem 3rem;
+            margin: 0 0 0 2rem;
             text-align: start;
         }
     }
@@ -144,14 +151,16 @@
         height: 350px;
         h3{
             font-size: 2rem;
-            margin: 1rem 3rem;
+            margin: 0rem 2rem;
         }
         p{
             font-size: 1.2rem;
-            margin: 1rem 1rem 1rem 3rem;
+            margin: 0 0 0 2rem;
             text-align: start;
         }
     }
+
+
     // PORTFOLIO PAGE
     .background-work1, .background-work2{
         align-content: center;

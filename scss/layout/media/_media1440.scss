@@ -1,4 +1,5 @@
 @media(max-width: 1440px){
+    // CONTACT PAGE
     .info-contacto h3{
         font-size: 2rem;
         margin: 3rem 0 3rem 3rem;
@@ -11,6 +12,8 @@
         font-size: 1.5rem;
         margin: 3rem 0 3rem 3rem;
     }
+
+    //HOME PAGE
     .TituloHome h2{
         font-size: 3.5rem;
         grid-column: 1/2;
@@ -76,12 +79,14 @@
         column-gap: 10rem;
         row-gap: 10rem;
     }
+    //NAVBAR
     .menu li a{
         font-size: 1.5rem;
     }
     .LogoEnNavbar{
         font-size: 1.7rem;
     }
+    // SERVICE PAGE
     .Logo-Titulo img{
         width: 180px;
         height: 180px;

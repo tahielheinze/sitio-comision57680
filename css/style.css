@@ -291,8 +291,7 @@ footer {
   .redes-footer a {
     color: #1d907a; }
   .redes-footer i {
-    font-size: 3rem;
-    margin-right: 2rem; }
+    font-size: 3rem; }
 
 .partner {
   grid-column: 3/4;
@@ -429,7 +428,7 @@ footer {
   height: 450px; }
   .mujer1-box p, .mujer2-box p, .mujer3-box p {
     text-align: justify;
-    margin: 1rem 3rem;
+    margin: 1rem 2rem;
     font-size: 1.5rem; }
   .mujer1-box h3, .mujer2-box h3, .mujer3-box h3 {
     text-align: justify;
@@ -924,11 +923,19 @@ ul {
   .Titulo p {
     padding: 1rem 0; } }
 
+@media (max-width: 1280px) {
+  .Trabajadores-box, .Ideas-box, .Ideas-box {
+    width: 320px; } }
+
 @media (max-width: 1250px) {
   .TituloHome h1 {
     font-size: 1rem; }
   .TituloHome h2 {
-    font-size: 3rem; } }
+    font-size: 3rem; }
+  .Trabajadores-box, .Ideas-box, .Ideas-box {
+    width: 313px; }
+  .mujer1-box p, .mujer2-box p, .mujer3-box p, .mujer2-box p, .mujer3-box p, .hombre1-box p, .hombre2-box p, .hombre3-box p, .hombre2-box p, .hombre3-box p {
+    margin: 1rem; } }
 
 @media (max-width: 1219px) {
   .LogosClientes {
@@ -965,7 +972,13 @@ ul {
   .Contenido-Dos-Home h3, .Contenido-Tres-Home h3 {
     padding: 0% 30%; }
   .Contenido-Tres-Home h3 {
-    padding: 0% 35.5%; } }
+    padding: 0% 35.5%; }
+  .Trabajadores-box, .Ideas-box, .Ideas-box {
+    width: 300px; }
+  .mujer1-box h3, .mujer2-box h3, .mujer3-box h3, .mujer2-box h3, .mujer3-box h3, .hombre1-box h3, .hombre2-box h3, .hombre3-box h3, .hombre2-box h3, .hombre3-box h3 {
+    margin: 0 2rem; }
+  .mujer1-box p, .mujer2-box p, .mujer3-box p, .mujer2-box p, .mujer3-box p, .hombre1-box p, .hombre2-box p, .hombre3-box p, .hombre2-box p, .hombre3-box p {
+    font-size: 1.4rem; } }
 
 @media (max-width: 1100px) {
   .TituloHome h2 {
@@ -976,7 +989,17 @@ ul {
     padding: 0% 35.5%; }
   .LogosClientes {
     column-gap: 9rem;
-    row-gap: 5rem; } }
+    row-gap: 5rem; }
+  .Trabajadores-box, .Ideas-box, .Ideas-box, .Ideas-box {
+    width: 275px; }
+  .mujer1-box h3, .mujer2-box h3, .mujer3-box h3, .mujer2-box h3, .mujer3-box h3, .hombre1-box h3, .hombre2-box h3, .hombre3-box h3, .hombre2-box h3, .hombre3-box h3 {
+    font-size: 2.3rem; }
+  .mujer1-box p, .mujer2-box p, .mujer3-box p, .mujer2-box p, .mujer3-box p, .hombre1-box p, .hombre2-box p, .hombre3-box p, .hombre2-box p, .hombre3-box p {
+    font-size: 1.2rem; }
+  .mujer-1, .mujer-2, .mujer-3, .hombre-1, .hombre-2, .hombre-3, .mujer-2, .mujer-3, .hombre-1, .hombre-2, .hombre-3, .hombre-2, .hombre-3 {
+    margin: 3rem; }
+  .About-Teamwork {
+    height: 500px; } }
 
 @media (max-width: 1052px) {
   .menu li a {
@@ -1057,7 +1080,6 @@ ul {
     grid-row: 3/4; }
   .servicio-seo {
     grid-row: 4/5; }
-  /* NOSOTROS PAGE */
   .Trabajadores-box, .Ideas-box {
     grid-column: 1/2;
     justify-self: center; }
@@ -1068,10 +1090,10 @@ ul {
     height: 350px; }
     .mujer1-box h3, .mujer2-box h3, .mujer3-box h3 {
       font-size: 2rem;
-      margin: 1rem 3rem; }
+      margin: 0rem 2rem; }
     .mujer1-box p, .mujer2-box p, .mujer3-box p {
       font-size: 1.2rem;
-      margin: 1rem 1rem 1rem 3rem;
+      margin: 0 0 0 2rem;
       text-align: start; }
   .mujer1-img, .mujer2-img, .mujer3-img, .hombre1-img, .hombre2-img, .hombre3-img {
     height: 300px;
@@ -1083,17 +1105,21 @@ ul {
     height: 350px; }
     .hombre1-box h3, .hombre2-box h3, .hombre3-box h3 {
       font-size: 2rem;
-      margin: 1rem 3rem; }
+      margin: 0rem 2rem; }
     .hombre1-box p, .hombre2-box p, .hombre3-box p {
       font-size: 1.2rem;
-      margin: 1rem 1rem 1rem 3rem;
+      margin: 0 0 0 2rem;
       text-align: start; }
   .background-work1, .background-work2, .background-work2 {
     align-content: center; }
   .portfolios {
     grid-template-columns: repeat(1, 1fr); }
   #TituloParrafo {
-    font-size: 1.1rem; } }
+    font-size: 1.1rem; }
+  #logo-facebook {
+    margin: 0rem 1.5rem 0rem 2.5rem; }
+  #logo-insta, #logo-linkedin {
+    margin: 0; } }
 
 @media (min-width: 933px) and (max-width: 1009px) {
   .Contenido-Dos-Home h3, .Contenido-Tres-Home h3 {
@@ -1124,7 +1150,12 @@ ul {
   .Contenido-Dos-Home h3, .Contenido-Tres-Home h3 {
     padding: 0% 20%; }
   .Contenido-Tres-Home h3 {
-    padding: 0% 27%; } }
+    padding: 0% 27%; }
+  .Titulo p {
+    font-size: 1.1rem; }
+  .Titulo img {
+    width: 130px;
+    height: 130px; } }
 
 @media (max-width: 768px) {
   .carousel-item {
@@ -1345,11 +1376,19 @@ ul {
   .Contenido-Dos-Home h3, .Contenido-Tres-Home h3 {
     padding: 0% 13%; }
   .FotoArticle1 img, .FotoArticle2 img {
-    object-fit: cover; } }
+    object-fit: cover; }
+  .Trabajadores-box p, .Ideas-box p, .Ideas-box p {
+    font-size: 1.7rem; }
+    .Trabajadores-box p i, .Ideas-box p i, .Ideas-box p i {
+      font-size: 2rem; }
+    .Trabajadores-box p strong, .Ideas-box p strong, .Ideas-box p strong {
+      font-size: 1.9rem; } }
 
 @media (min-width: 425px) and (max-width: 606px) {
   .navbar-menu {
     padding: 0.5rem; }
+  .navbar a {
+    font-size: 1.2rem; }
   .Contenido-Uno-Home {
     margin: 2rem; }
   .Contenido-Uno-Home .nombre-empresa {
@@ -1415,8 +1454,6 @@ ul {
     align-content: center; }
   .texto-service {
     font-size: 1rem; }
-  .navbar a {
-    font-size: 1.2rem; }
   .info-contacto h3 {
     grid-column: 1/4;
     justify-self: center;
@@ -1434,12 +1471,11 @@ ul {
     font-size: 1rem; }
   .copyright p {
     font-size: .5rem; }
-  /* NOSTORS PAGE*/
   .About-Teamwork {
     height: 150px; }
   .Trabajadores-box, .Ideas-box, .Ideas-box {
-    width: 100px;
-    height: auto; }
+    width: 125px;
+    height: 65px; }
   .Trabajadores-box p, .Ideas-box p, .Ideas-box p {
     font-size: 1rem; }
     .Trabajadores-box p i, .Ideas-box p i, .Ideas-box p i {
@@ -1495,18 +1531,22 @@ ul {
   .logoFooter img {
     width: 250px; }
   .Titulo p {
-    font-size: .8rem;
-    padding: 0; }
+    font-size: .6rem;
+    padding: 0;
+    align-self: center; }
   .Trabajadores-box, .Ideas-box, .Ideas-box, .Ideas-box {
-    height: 50px; }
-  .Trabajadores-box p, .Ideas-box p, .Ideas-box p {
-    font-size: .6rem; }
-    .Trabajadores-box p i, .Ideas-box p i, .Ideas-box p i {
-      font-size: .6rem; }
-    .Trabajadores-box p strong, .Ideas-box p strong, .Ideas-box p strong {
-      font-size: .6rem; }
-  .mujer1-box p, .mujer2-box p, .mujer3-box p, .mujer2-box p, .mujer3-box p, .mujer2-box p, .mujer3-box p, .mujer2-box p, .mujer3-box p, .hombre1-box p, .hombre2-box p, .hombre3-box p, .hombre2-box p, .hombre3-box p, .hombre2-box p, .hombre3-box p, .hombre2-box p, .hombre3-box p {
-    font-size: .9rem; }
+    display: none; }
+  .mujer1-box, .mujer2-box, .mujer3-box, .mujer2-box, .mujer3-box, .hombre1-box, .hombre2-box, .hombre3-box, .hombre2-box, .hombre3-box {
+    border-left: none;
+    border-top: 10px solid #00798b; }
+    .mujer1-box p, .mujer2-box p, .mujer3-box p, .mujer2-box p, .mujer3-box p, .hombre1-box p, .hombre2-box p, .hombre3-box p, .hombre2-box p, .hombre3-box p {
+      font-size: .9rem; }
+    .mujer1-box h3, .mujer2-box h3, .mujer3-box h3, .mujer2-box h3, .mujer3-box h3, .hombre1-box h3, .hombre2-box h3, .hombre3-box h3, .hombre2-box h3, .hombre3-box h3 {
+      font-size: 1.6rem;
+      margin: 1rem 2rem; }
+  .hombre1-box, .hombre2-box, .hombre3-box, .hombre2-box, .hombre3-box {
+    border-right: none;
+    border-top: 10px solid #004c44; }
   .mujer-1, .mujer-2, .mujer-3, .hombre-1, .hombre-2, .hombre-3, .mujer-2, .mujer-3, .hombre-1, .hombre-2, .hombre-3, .hombre-2, .hombre-3, .mujer-2, .mujer-3, .hombre-1, .hombre-2, .hombre-3, .hombre-2, .hombre-3, .hombre-2, .hombre-3 {
     margin: 2.5rem 2rem; }
   .Contenido-Dos-Home h3, .Contenido-Tres-Home h3 {
@@ -1549,8 +1589,4 @@ ul {
   .Contenido-Tres-Home h3 {
     padding: 0% 12%; }
   .ClientesContainer h2 {
-    font-size: 2rem; }
-  #logo-facebook {
-    margin: 0rem 1.5rem 0rem 2.5rem; }
-  #logo-insta, #logo-linkedin {
-    margin: 0; } }
+    font-size: 2rem; } }

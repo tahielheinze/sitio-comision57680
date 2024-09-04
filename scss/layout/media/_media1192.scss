@@ -1,9 +1,22 @@
-// HOMEPAGE
 @media (max-width:1192px){
+    // HOMEPAGE
     .Contenido-Dos-Home h3{
         padding: 0% 30%;
     }
     .Contenido-Tres-Home h3{
         padding: 0% 35.5%;
+    }
+
+    // NOSOTROS PAGE
+    .Trabajadores-box, .Ideas-box{
+        width: 300px;
+    }
+    .mujer1-box, .mujer2-box, .mujer3-box, .hombre1-box, .hombre2-box,.hombre3-box{
+        h3{
+            margin: 0 2rem;
+        }
+        p{
+            font-size: 1.4rem;
+        }
     }
 }

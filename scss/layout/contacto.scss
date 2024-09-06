@@ -14,6 +14,7 @@
     width: 719px;
     height: 146px;
     align-content: center;
+    @include flex (row,nowrap,center,center,none);
 
     h2 {
         font-size: map-get($fontsize, 'lg');

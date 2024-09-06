@@ -12,6 +12,7 @@
     @include box-contenedora (none,none,map-get($colores, 'box-color2'),map-get($colores, 'texto-color1'),none,center,none);
     width: 719px;
     height: 146px;
+    @include flex(row,nowrap,center,center,none);
 
     h2 {
         font-size: map-get($fontsize, 'lg');

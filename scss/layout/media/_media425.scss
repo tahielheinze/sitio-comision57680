@@ -178,9 +178,25 @@
         margin: 0rem 4rem;
     }
     // PORTFOLIO PAGE
+    .Portfolio-foto{
+        height: 300px;
+    }
     .carre-img img, .faber-img img, .sinte-img img, .cine-img img, .farma-img img, .grido-img img{
         width: 350px;
         height: auto;
+    }
+    .background-work1, .background-work2{
+        height: auto;
+        p{
+            padding: 1rem;
+            font-size: .85rem;
+        }
+    }
+    .Carre-work, .Faber-work, .sinte-work, .Cine-work, .Farma-work, .Grido-work{
+        h3{
+            margin: 1rem 0;
+            font-size: 2rem;
+        }
     }
     #TituloParrafo{
         font-size: 1rem;
@@ -191,11 +207,5 @@
     .portfolios{
         margin: 2rem;
         row-gap: 2rem;
-    }
-    .Carre-work h3, .Faber-work h3, .sinte-work h3, .Cine-work h3, .Farma-work h3, .Grido-work h3{
-        font-size: 2rem;
-    }
-    .portfolioText{
-        font-size: .85rem;
     }
 }

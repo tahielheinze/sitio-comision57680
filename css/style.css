@@ -127,7 +127,13 @@ body {
   text-align: center;
   font-size: 2rem;
   height: 250px;
-  width: 250px; }
+  width: 250px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: none; }
   .ProyectosBox p {
     font-size: 1.5rem;
     font-weight: bold;
@@ -147,7 +153,13 @@ body {
   text-align: center;
   font-size: 2rem;
   height: 250px;
-  width: 250px; }
+  width: 250px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: none; }
   .ClientesBox p {
     font-size: 1.5rem;
     font-weight: bold;
@@ -183,7 +195,13 @@ i {
   text-align: center;
   font-size: 2rem;
   height: 250px;
-  width: 250px; }
+  width: 250px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: none; }
   .CampañasBox p {
     font-size: 1.5rem;
     font-weight: bold;
@@ -203,7 +221,13 @@ i {
   text-align: center;
   font-size: 2rem;
   height: 250px;
-  width: 250px; }
+  width: 250px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: none; }
   .LeadsBox p {
     font-size: 1.5rem;
     font-weight: bold;
@@ -213,10 +237,15 @@ i {
       margin: 0 0.5rem; }
 
 .ClientesContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: none;
   background-color: #0a2424;
   color: #ffffff;
   height: 222px;
-  align-content: center;
   margin-top: 3rem; }
   .ClientesContainer h2 {
     font-size: 3rem;
@@ -485,7 +514,13 @@ footer {
   align-content: center;
   justify-self: none;
   width: 719px;
-  height: 146px; }
+  height: 146px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: none; }
   .service-box h2 {
     font-size: 3rem;
     font-weight: bold;
@@ -579,10 +614,15 @@ footer {
 .Portfolio-box {
   background-color: #004c44;
   color: #ffffff;
-  opacity: 90%;
   width: 719px;
   height: 146px;
-  align-content: center; }
+  align-content: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: none; }
   .Portfolio-box h2 {
     font-size: 3rem;
     font-weight: bold;
@@ -610,12 +650,13 @@ footer {
 .Carre-work h3, .Faber-work h3, .sinte-work h3, .Cine-work h3, .Farma-work h3, .Grido-work h3 {
   font-size: 2.5rem;
   font-weight: 550;
-  text-align: center; }
+  text-align: center;
+  margin: 1rem 0; }
 
 .background-work1, .background-work2 {
   background-color: #ffffff;
   border-top: 10px solid #00798b;
-  height: 190px; }
+  height: auto; }
 
 .background-work2 {
   border-top: 10px solid #004c44; }
@@ -624,7 +665,7 @@ footer {
   text-align: justify;
   font-weight: 450;
   font-size: 1.1rem;
-  padding: 0 3rem; }
+  padding: 1rem; }
 
 .Contacto-foto {
   background-image: url(../assets/img/Contacto-desktop.svg);
@@ -645,7 +686,13 @@ footer {
   color: #ffffff;
   width: 719px;
   height: 146px;
-  align-content: center; }
+  align-content: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: none; }
   .Contacto-box h2 {
     font-size: 3rem;
     font-weight: bold;
@@ -1355,9 +1402,13 @@ ul {
     height: 360px; }
   #TituloParrafo {
     text-align: justify;
-    padding: .5rem .5rem; }
+    padding: 0; }
   .portfolioText {
-    font-size: 1rem; } }
+    font-size: 1rem; }
+  .Portfolio-box h2 {
+    font-size: 2rem; }
+  .background-work1, .background-work2, .background-work2 {
+    height: auto; } }
 
 @media (max-width: 611px) {
   .texto-contacto {
@@ -1396,7 +1447,13 @@ ul {
     .red-box h2, .consul-box h2, .seo-box h2, .rebran-box h2, .rebran-box h2 {
       font-size: 1.3rem; }
     .red-box p, .consul-box p, .seo-box p, .rebran-box p, .rebran-box p {
-      font-size: 1.2rem; } }
+      font-size: 1.2rem; }
+  .Portfolio-box h2 {
+    font-size: 2rem; }
+  .Carre-work, .Faber-work, .sinte-work, .Cine-work, .Farma-work, .Grido-work {
+    margin: 1rem 0; }
+  .portfolioText {
+    padding: 1rem; } }
 
 @media (min-width: 425px) and (max-width: 606px) {
   .navbar-menu {
@@ -1524,20 +1581,26 @@ ul {
     margin: 0; }
   #logo-facebook {
     margin: 0rem 4rem; }
+  .Portfolio-foto {
+    height: 300px; }
   .carre-img img, .faber-img img, .sinte-img img, .cine-img img, .farma-img img, .grido-img img {
     width: 350px;
     height: auto; }
+  .background-work1, .background-work2, .background-work2 {
+    height: auto; }
+    .background-work1 p, .background-work2 p, .background-work2 p {
+      padding: 1rem;
+      font-size: .85rem; }
+  .Carre-work h3, .Faber-work h3, .sinte-work h3, .Cine-work h3, .Farma-work h3, .Grido-work h3 {
+    margin: 1rem 0;
+    font-size: 2rem; }
   #TituloParrafo {
     font-size: 1rem; }
   .Portfolio-box h2 {
     font-size: 1.5rem; }
   .portfolios {
     margin: 2rem;
-    row-gap: 2rem; }
-  .Carre-work h3, .Faber-work h3, .sinte-work h3, .Cine-work h3, .Farma-work h3, .Grido-work h3 {
-    font-size: 2rem; }
-  .portfolioText {
-    font-size: .85rem; } }
+    row-gap: 2rem; } }
 
 @media (min-width: 320px) and (max-width: 424px) {
   .navbar-menu {
@@ -1564,18 +1627,27 @@ ul {
   .mujer-1, .mujer-2, .mujer-3, .hombre-1, .hombre-2, .hombre-3, .mujer-2, .mujer-3, .hombre-1, .hombre-2, .hombre-3, .hombre-2, .hombre-3, .mujer-2, .mujer-3, .hombre-1, .hombre-2, .hombre-3, .hombre-2, .hombre-3, .hombre-2, .hombre-3 {
     margin: 2.5rem 2rem; }
   #TituloParrafo {
-    font-size: .8rem;
-    text-align: center; }
+    font-size: .6rem;
+    text-align: center;
+    padding: 0;
+    margin: 0 2rem; }
   .Portfolio-foto {
     height: 300px; }
+  .Portfolio-box {
+    height: 100px; }
+    .Portfolio-box h2 {
+      font-size: 1.3rem; }
   .carre-img img, .faber-img img, .sinte-img img, .cine-img img, .farma-img img, .grido-img img {
     width: 300px; }
   .portfolios {
-    row-gap: 3rem; }
+    row-gap: 2rem;
+    margin: 1rem; }
   .background-work1, .background-work2, .background-work2, .background-work2 {
     height: auto; }
   .portfolioText {
-    padding: 0 1rem; }
+    font-size: .9rem; }
+  .Carre-work h3, .Faber-work h3, .sinte-work h3, .Cine-work h3, .Farma-work h3, .Grido-work h3 {
+    margin: 1rem 0; }
   .logo {
     font-size: 1rem; }
   .Contenido-Uno-Home p {
@@ -1617,4 +1689,14 @@ ul {
     font-size: .9rem;
     text-align: center; }
   .red-box h2, .consul-box h2, .seo-box h2, .rebran-box h2, .consul-box h2, .seo-box h2, .seo-box h2, .rebran-box h2 {
-    font-size: 1.15rem; } }
+    font-size: 1.15rem; }
+  .phone {
+    grid-column: 1/2;
+    grid-row: 4/5; }
+  .ubi {
+    grid-row: 3/5;
+    font-size: .5rem;
+    margin: 0 1.5rem 0 0; }
+  .mail, .phone, .ubi {
+    font-size: .6rem;
+    margin: 0 0 0 0.1rem; } }

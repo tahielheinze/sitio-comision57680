@@ -273,9 +273,17 @@
     // PORTFOLIO PAGE 
     #TituloParrafo{
         text-align: justify;
-        padding: .5rem .5rem;
+        padding: 0;
     }
     .portfolioText{
         font-size: 1rem;
+    }
+    .Portfolio-box{
+        h2{
+            font-size: 2rem;
+        }
+    }
+    .background-work1, .background-work2{
+        height: auto;
     }
 }

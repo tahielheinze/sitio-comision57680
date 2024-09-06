@@ -115,6 +115,7 @@ body {
     font-size: map-get($fontsize, 'md-lg');
     height: 250px;
     width: 250px;
+    @include flex(row,nowrap,center,center,none);
 
     p {
         font-size: map-get($fontsize, 'md');
@@ -133,6 +134,7 @@ body {
     font-size: map-get($fontsize, 'md-lg');
     height: 250px;
     width: 250px;
+    @include flex(row,nowrap,center,center,none);
 
     p {
         font-size: map-get($fontsize, 'md');
@@ -176,6 +178,7 @@ i {
     font-size: map-get($fontsize, 'md-lg');
     height: 250px;
     width: 250px;
+    @include flex(row,nowrap,center,center,none);
 
     p {
         font-size: map-get($fontsize, 'md');
@@ -194,6 +197,7 @@ i {
     font-size: map-get($fontsize, 'md-lg');
     height: 250px;
     width: 250px;
+    @include flex(row,nowrap,center,center,none);
 
     p {
         font-size: map-get($fontsize, 'md');
@@ -208,13 +212,12 @@ i {
 
 //CONTENIDO CUATRO (CLIENTES)
 
-.ClientesContainer {
+.ClientesContainer{
+    @include flex(row,nowrap,center,center,none);
     background-color: map-get($colores, 'texto-back');
     color: map-get($colores, 'texto-color1');
     height: 222px;
-    align-content: center;
     margin-top: 3rem;
-
     h2 {
         font-size: map-get($fontsize, 'lg');
         font-weight: bold;

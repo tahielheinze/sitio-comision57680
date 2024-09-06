@@ -1,4 +1,4 @@
-@media (min-width:320px) and (max-width:424px){
+@media (min-width:320px)and (max-width: 424px){
 .navbar-menu{
     padding: .5rem;
 }
@@ -38,23 +38,37 @@
 
 // PORTFOLIO  PAGE
 #TituloParrafo{
-    font-size: .8rem;
+    font-size: .6rem;
     text-align: center;
+    padding: 0;
+    margin: 0 2rem;
 }
 .Portfolio-foto{
     height: 300px;
+}
+.Portfolio-box {
+    height: 100px;
+    h2{
+    font-size: 1.3rem;
+}
 }
 .carre-img img, .faber-img img, .sinte-img img, .cine-img img, .farma-img img, .grido-img img{
     width: 300px;
 }
 .portfolios{
-    row-gap: 3rem;
+    row-gap: 2rem;
+    margin: 1rem;
 }
 .background-work1, .background-work2, .background-work2{
     height: auto;
 }
 .portfolioText{
-    padding: 0 1rem;
+    font-size: .9rem;
+}
+.Carre-work, .Faber-work, .sinte-work, .Cine-work, .Farma-work, .Grido-work{
+    h3{
+        margin: 1rem 0;
+    }
 }
 
 //HOME PAGE
@@ -124,5 +138,21 @@
     h2{
         font-size: 1.15rem;
     }
+}
+
+// CONTACTO PAGE
+.phone{
+    grid-column: 1/2;
+    grid-row: 4/5;
+}
+.ubi{
+    grid-row: 3/5;
+    font-size: .5rem;
+    margin: 0 1.5rem 0 0;
+}
+.mail{
+    font-size: .6rem;
+    margin: 0 0 0 0.1rem;
+
 }
 }

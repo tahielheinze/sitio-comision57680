@@ -1451,9 +1451,7 @@ ul {
   .Portfolio-box h2 {
     font-size: 2rem; }
   .Carre-work, .Faber-work, .sinte-work, .Cine-work, .Farma-work, .Grido-work {
-    margin: 1rem 0; }
-  .portfolioText {
-    padding: 1rem; } }
+    margin: 1rem 0; } }
 
 @media (min-width: 425px) and (max-width: 606px) {
   .navbar-menu {
@@ -1589,7 +1587,6 @@ ul {
   .background-work1, .background-work2, .background-work2 {
     height: auto; }
     .background-work1 p, .background-work2 p, .background-work2 p {
-      padding: 1rem;
       font-size: .85rem; }
   .Carre-work h3, .Faber-work h3, .sinte-work h3, .Cine-work h3, .Farma-work h3, .Grido-work h3 {
     margin: 1rem 0;
@@ -1699,4 +1696,7 @@ ul {
     margin: 0 1.5rem 0 0; }
   .mail, .phone, .ubi {
     font-size: .6rem;
-    margin: 0 0 0 0.1rem; } }
+    margin: 0 0 0 0.1rem; }
+  .info-contacto h3 {
+    grid-column: 1/4;
+    margin: 0 1rem; } }
